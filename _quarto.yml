@@ -9,10 +9,14 @@ website:
         text: Home
       - href: about.qmd
         text: About
-      - href: academic.qmd
-        text: Academic
-      - href: science.qmd
-        text: Science
+      - text: Science
+        menu: 
+        - href: science/academic.qmd
+          text: Academic CV
+        - href: science/project.qmd
+          text: Research Project
+        - href: science/writing.qmd
+          text: Popular Science Writing
       - href: art.qmd
         text: Art
       - href: blog.qmd
