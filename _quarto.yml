@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "sunnytseng.github.io"
+  title: "Sunny Tseng 曾奕晴"
   navbar:
     left:
       - href: index.qmd

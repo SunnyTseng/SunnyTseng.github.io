@@ -1,5 +1,5 @@
 ---
-title: "sunnytseng.github.io"
+title: "Sunny Tseng, PhD"
 ---
 
 This is a Quarto website.
