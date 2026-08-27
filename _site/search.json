@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "Here is the home page",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nBut this one is okay?"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About Me",
+    "title": "Consulting works",
     "section": "",
-    "text": "Welcome to my website!"
+    "text": "Welcome to my website! Wait a minute! It’s not responding again!\nHow about now?\nah ah\nhow about now&gt;?"
   },
   {
     "objectID": "about.html#education",
@@ -19,5 +19,40 @@
     "title": "Sunny Tseng",
     "section": "Education",
     "text": "Education\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul, MN B.A in Economics | Sept 2007 - June 2011"
+  },
+  {
+    "objectID": "academic.html",
+    "href": "academic.html",
+    "title": "Academic",
+    "section": "",
+    "text": "Academic CV"
+  },
+  {
+    "objectID": "science.html",
+    "href": "science.html",
+    "title": "Science",
+    "section": "",
+    "text": "Will have two tabs - one for research projects and another one for scientific writing"
+  },
+  {
+    "objectID": "art.html",
+    "href": "art.html",
+    "title": "Artworks",
+    "section": "",
+    "text": "Academic CV"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Personal blog writing"
+  },
+  {
+    "objectID": "sound.html",
+    "href": "sound.html",
+    "title": "Sound recordings",
+    "section": "",
+    "text": "Showcase my interactive maps and also all the previous works"
   }
 ]

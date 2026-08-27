@@ -7,7 +7,18 @@ website:
     right:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About
+      - href: academic.qmd
+        text: Academic
+      - href: science.qmd
+        text: Science
+      - href: art.qmd
+        text: Art
+      - href: blog.qmd
+        text: Blog
+      - href: sound.qmd
+        text: Sound
 
 format:
   html:
