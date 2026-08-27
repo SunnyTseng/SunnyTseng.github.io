@@ -17,8 +17,12 @@ website:
           text: Research Project
         - href: science/writing.qmd
           text: Popular Science Writing
-      - href: art.qmd
-        text: Art
+      - text: Art
+        menu:
+        - href: art/design.qmd
+          text: Infographic Design
+        - href: art/fine_art.qmd
+          text: Fine Art
       - href: blog.qmd
         text: Blog
       - href: sound.qmd
