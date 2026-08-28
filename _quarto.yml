@@ -7,8 +7,10 @@ website:
     right:
       - href: index.qmd
         text: Home
+        
       - href: about.qmd
         text: About
+        
       - text: Science
         menu: 
         - href: science/academic.qmd
@@ -17,14 +19,17 @@ website:
           text: Research Project
         - href: science/writing.qmd
           text: Popular Science Writing
+          
       - text: Art
         menu:
         - href: art/design.qmd
           text: Infographic Design
         - href: art/fine_art.qmd
           text: Fine Art
+          
       - href: blog.qmd
         text: Blog
+        
       - href: sound.qmd
         text: Sound
 
