@@ -1,9 +1,34 @@
 ---
-title: "Here is the home page"
+title: "Sunny Tseng, PhD"
+about:
+  template: broadside
+  image: images/avatar_original.jpg
+  links:
+    - icon: github
+      href: https://github.com/SunnyTseng
+    - icon: mortarboard-fill
+      href: https://scholar.google.com/citations?user=_bHf5NgAAAAJ
+    - icon: linkedin
+      href: https://www.linkedin.com/in/sunnytseng/
 ---
 
-This is a Quarto website.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+**Hello! I am Sunny, an independent ecological consultant and R programmer based in Vancouver, Canada**.
 
-But this one is okay?
+> I earned my PhD in the spring of 2026 and am currently leading international projects, including an acoustic monitoring study in Lithuania (supported by National Geographic and Wildlife Acoustics), and working as a software developer with the BirdNET Team at the Cornell Lab of Ornithology (funded by the R Consortium), all while launching my business as an independent consultant!
+
+---
+
+<!-- Break out of the two-column template layout -->
+
+::: {.column-page}
+
+## About Me
+
+哈囉，我是奕晴，來自於一個美麗的熱帶小島 - 臺灣。台大物理系、森林系雙主修畢業後，到加拿大溫哥華就讀碩士班、博士，主要從事鳥類聲學研究，在這些年歲中，於臺灣、加拿大、俄羅斯、立陶宛等世界各地進行研究，收集了三百多種鳥類的鳴唱聲音。曾獲得國家地理頻道 Early Career Grant、加拿大鳥類學會 Taverner Award、加拿大自然科學與工程研究委員會全額研究獎學金。並已在國際期刊發表數篇研究成果。
+
+平時以科學研究為正職，遊走於生態資料科學家、藝術繪圖者、自然書寫者等專業間。同時享受藝術創作、寫作、及野外錄音帶來的生活反思，某種程度上，我認為那更能反映出我所認識的世界。看到水會想跳、看到山會想爬、喜歡抱樹、喜歡一個人靜靜地走路、每天要花一個小時吃早餐。目前定居於加拿大溫哥華，另一個靠海的美麗地方，家門口望向海的方向，就是臺灣。
+
+Hi there! I was born and raised in a beautiful country - Taiwan, and now call Vancouver, Canada, my second home. I’ve spent much of my career conducting bird-related scientific research in Siberia, Taiwan, Canada, and Lithuania, collecting bird sounds from more than 300 species - check them out on my [Xeno-Canto](https://xeno-canto.org/contributor/SPMWIWZKKC)! I also enjoy writing [popular science articles](https://sunnytseng.ca/research/) in both Traditional Chinese and English. Exploring this world with great enthusiasm and self-reflection is how I guide my life. 
+
+:::
