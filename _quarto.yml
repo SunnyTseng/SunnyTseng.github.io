@@ -32,6 +32,7 @@ website:
         
       - href: sound.qmd
         text: Sound
+        
 format:
   html:
     theme:
