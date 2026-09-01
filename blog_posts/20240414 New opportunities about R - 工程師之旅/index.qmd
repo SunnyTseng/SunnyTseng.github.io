@@ -58,3 +58,5 @@ ROpenSci Championship Program: https://ropensci.org/champions/
 -   [Rladies](https://rladies.org/)
 -   [POSIT::conf](https://posit.co/conference/)
 -   [useR! conference](https://www.r-project.org/conferences/)
+
+![](featured.png)
