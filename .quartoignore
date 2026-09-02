@@ -1,11 +1,3 @@
-# Ignore raw data & media inside blog posts
-blog_posts/**/*.png
-blog_posts/**/*.PNG
-blog_posts/**/*.jpg
-blog_posts/**/*.JPG
-blog_posts/**/*.jepg
-blog_posts/**/*.JEPG
-
 # Ignore local caches
 .quarto/
 renv/
