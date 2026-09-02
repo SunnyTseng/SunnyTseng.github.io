@@ -284,6 +284,6 @@ draft: false
 
 記錄一下騎到快哭的自己與溫暖的朝陽。
 
-![](featured.JPG)
+![](./featured.JPG)
 
 ![](IMG_7526.jpg)

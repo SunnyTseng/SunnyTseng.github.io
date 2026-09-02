@@ -4,6 +4,7 @@ description: 一個交換興趣的概念(笑)，剛剛好也可以放飛我這�
 
 author: Sunny Tseng
 date: 2026-04-01
+image: featured.JPG
 
 categories: 
   - Canada
