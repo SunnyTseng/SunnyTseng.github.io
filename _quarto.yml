@@ -35,9 +35,7 @@ website:
         
   page-navigation: true
   page-footer: 
-    right: "Created with Quarto by Sunny Tseng; Updated 2026 Sep."
-
-
+    right: "Created with Quarto by Sunny Tseng. Updated 2026 Sep."
 
 format:
   html:

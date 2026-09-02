@@ -1,9 +1,22 @@
 ---
 title: "Scientific Visual Design"
-format: html
-lightbox: 
-  match: auto
-  effect: fade
+extensions:
+  photo-gallery:
+    # Path to your image folder
+    album-files: design
+    # justified | masonry | grid
+    layout: justified
+    # Target row height in px (in the justified layout)
+    thumbnail-height: 300
+    # gap between images in px
+    gap: 5
+    
+    
+# tutorial: https://andrewheiss.github.io/quarto-static-photo-gallery/
 ---
 
+Here are some beautiful photos:
 
+{{< photo-gallery >}}
+
+And here's some more text.
