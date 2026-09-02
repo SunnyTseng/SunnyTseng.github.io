@@ -1,0 +1,23 @@
+---
+title: 大學生專題經驗分享
+description: 時空 35 期
+
+author: Sunny Tseng
+date: 2016-11-01
+
+image: featured.PNG
+categories: 
+  - 中文
+---
+
+<div class="mb-3">
+  <a href="article.pdf" target="_blank" class="btn btn-outline-primary btn-sm">
+    <i class="bi bi-arrows-fullscreen"></i> Open full screen / new tab
+  </a>
+</div>
+
+[Link to full volume](./article_full.pdf)
+
+<object data="article.pdf" type="application/pdf" width="100%" height="800px">
+  <iframe src="article.pdf" width="100%" height="800px" style="border: none;"></iframe>
+</object>

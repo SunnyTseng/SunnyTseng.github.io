@@ -1,0 +1,19 @@
+---
+title: Can Statistics Help Ornighologists Hear Birds?
+description: BranchLines 29(3):11
+
+author: Sunny Tseng
+date: 2018-09-01
+
+image: featured.PNG
+categories: 
+  - English
+---
+
+<object data="https://e.issuu.com/embed.html?d=bl_29.3&amp;u=ubcforestry" width="100%" height="800px">
+
+<iframe src="https://e.issuu.com/embed.html?d=bl_29.3&amp;u=ubcforestry" width="100%" height="800px" style="border: none;" allowfullscreen="true">
+
+</iframe>
+
+</object>

@@ -1,3 +1,11 @@
 ---
-title: "popular science writing"
+title: "Popular Science Writing"
+
+listing:
+  contents: writing_popular_science
+  type: grid # Renders a visual card layout
+  sort: "date desc"
+  categories: true
 ---
+
+I love writing popular science articles to share the joy and discoveries of being a scientist. I mostly write in Traditional Chinese for readers in Taiwan, but I also write in English from time to time for Canadian magazines.

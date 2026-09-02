@@ -1,0 +1,21 @@
+---
+title: 為鳥兒戴上腳環身分證
+description: 自然保育季刊 124 期
+
+author: Sunny Tseng
+date: 2024-01-01
+
+image: featured.PNG
+categories: 
+  - 中文
+---
+
+<div class="mb-3">
+  <a href="article.pdf" target="_blank" class="btn btn-outline-primary btn-sm">
+    <i class="bi bi-arrows-fullscreen"></i> Open full screen / new tab
+  </a>
+</div>
+
+<object data="article.pdf" type="application/pdf" width="100%" height="800px">
+  <iframe src="article.pdf" width="100%" height="800px" style="border: none;"></iframe>
+</object>

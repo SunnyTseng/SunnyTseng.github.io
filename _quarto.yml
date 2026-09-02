@@ -13,13 +13,13 @@ website:
         
       - text: Science
         menu: 
-        - href: science/academic.qmd
-          text: Academic CV
-        - href: science/project.qmd
-          text: Research Project
         - href: science/writing.qmd
           text: Popular Science Writing
-          
+        - href: science/project.qmd
+          text: Research Project
+        - href: science/academic.qmd
+          text: Academic CV
+
       - text: Art
         menu:
         - href: art/design.qmd
@@ -41,5 +41,7 @@ format:
     css: styles.css
     toc: true
 
-editor: visual
+editor: source
+
+lightbox: true
 
