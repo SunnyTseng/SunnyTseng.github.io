@@ -35,11 +35,10 @@ website:
         
   page-navigation: true
   page-footer: 
-    right: "Created with Quarto by Sunny Tseng; Updated {{< meta date >}}" 
+    right: "Created with Quarto by Sunny Tseng; Updated 2026 Sep."
 
-date: today
-date-format: "YYYY-MM-DD"  
-  
+
+
 format:
   html:
     theme:
@@ -47,7 +46,7 @@ format:
       - brand
     css: styles.css
     toc: true
-
+    
 editor: source
 
 lightbox: true
