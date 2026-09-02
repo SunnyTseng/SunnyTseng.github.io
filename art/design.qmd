@@ -1,5 +1,7 @@
 ---
 title: "Scientific Visual Design"
+format: html
+
 extensions:
   photo-gallery:
     # Path to your image folder
@@ -10,7 +12,6 @@ extensions:
     thumbnail-height: 300
     # gap between images in px
     gap: 5
-    
     
 # tutorial: https://andrewheiss.github.io/quarto-static-photo-gallery/
 ---

@@ -4,6 +4,9 @@ project:
 website:
   title: "曾奕晴 Sunny Tseng"
   navbar:
+    search: true
+    background: light
+    foreground: secondary
     right:
       - href: index.qmd
         text: Home
@@ -32,8 +35,10 @@ website:
         
       - href: sound.qmd
         text: Sound
+  
         
   page-navigation: true
+  
   page-footer: 
     right: "Created with Quarto by Sunny Tseng. Updated 2026 Sep."
 
