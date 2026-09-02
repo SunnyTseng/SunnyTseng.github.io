@@ -24,3 +24,6 @@ about:
 平時以科學研究為正職，遊走於生態資料科學家、藝術繪圖者、自然書寫者等專業間。同時享受藝術創作、寫作、及野外錄音帶來的生活反思，某種程度上，我認為那更能反映出我所認識的世界。看到水會想跳、看到山會想爬、喜歡抱樹、喜歡一個人靜靜地走路、每天要花一個小時吃早餐。目前定居於加拿大溫哥華，另一個靠海的美麗地方，家門口望向海的方向，就是臺灣。
 
 Hi there! I was born and raised in a beautiful country - Taiwan, and now call Vancouver, Canada, my second home. I’ve spent much of my career conducting bird-related scientific research in Siberia, Taiwan, Canada, and Lithuania, collecting bird sounds from more than 300 species - check them out on my [Xeno-Canto](https://xeno-canto.org/contributor/SPMWIWZKKC)! I also enjoy writing [popular science articles](https://sunnytseng.ca/research/) in both Traditional Chinese and English. Exploring this world with great enthusiasm and self-reflection is how I guide my life. 
+
+[test](about.qmd): This is how to put a link to a website page
+[test2](science/writing.qmd)

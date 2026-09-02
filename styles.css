@@ -1,1 +1,35 @@
 /* css styles */
+
+
+/* Add a subtle drop shadow to the top navigation bar */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Nav bar styling */
+.navbar-brand,
+.navbar-title {
+  font-weight: 700; /* Bold (or 800 for extra bold) */
+}
+
+
+
+/* 2. Target Mobile Devices (Screens 768px and smaller) */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9375rem; /* ~15px base size for mobile, matching standard Hugo themes */
+    line-height: 1.5;
+  }
+
+  /* Adjust headings on mobile so they don't look overly large */
+  h1, .title {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+}
