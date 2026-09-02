@@ -2,7 +2,7 @@
 title: "Sunny Tseng, PhD"
 about:
   template: broadside
-  image: images/avatar_original.jpg
+  image: ./images/avatar_original.jpg
   links:
     - icon: github
       href: https://github.com/SunnyTseng
