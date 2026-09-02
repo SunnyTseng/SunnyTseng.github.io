@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: 74065eb9-93fa-4cc1-bad5-bf0ff7b84f0c
+      url: https://idyllic-biscotti-8a44f3.netlify.app
