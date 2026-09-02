@@ -43,6 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,16 +109,16 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-science">    
         <li>
-    <a class="dropdown-item" href="../../science/academic.html">
- <span class="dropdown-text">Academic CV</span></a>
+    <a class="dropdown-item" href="../../science/writing.html">
+ <span class="dropdown-text">Popular Science Writing</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../science/project.html">
  <span class="dropdown-text">Research Project</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../science/writing.html">
- <span class="dropdown-text">Popular Science Writing</span></a>
+    <a class="dropdown-item" href="../../science/academic.html">
+ <span class="dropdown-text">Academic CV</span></a>
   </li>  
     </ul>
   </li>
@@ -205,7 +208,7 @@ ul.task-list li input[type="checkbox"] {
 <p>原來已經這麼久了呢，你細說著當時在系學會的回憶，有些我忘了，你卻記得一清二楚。我只記得每次期末考前的系學會總是很熱鬧，我也記得當時都讀書讀到又哭又笑的。回憶總是那樣甜甜苦苦，無限珍貴。</p>
 <p>感謝這位理論物理學家從遠方捎來了旅人的喜悅，並且在這幾天來陪我上山下海，雖然讓你在大太陽下搬梯子走爛泥巴，也不小心讓鳥屋調查中的兇猛蜘蛛嚇到你，但能與你分享小小鳥類學家的生活，真的是很快樂的一件事情。也謝謝你與我分享了一杯聖誕節專屬的 Glüewine，還幫我複習了記憶模糊的相對論與量子物理。也很欣慰地看到你明明冷到不行卻還是堅持只穿一件外套，就跟當年的你一樣。</p>
 <p>那天在結冰的湖面上，空中的燈光排成了仙后座，指向我們的北極星。要一直這樣在世界不同角落努力著，並一起笑著、哭著噢。</p>
-<p><img src="featured.jpg" class="img-fluid"></p>
+<p><a href="featured.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="featured.jpg" class="img-fluid"></a></p>
 
 
 
@@ -610,6 +613,38 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

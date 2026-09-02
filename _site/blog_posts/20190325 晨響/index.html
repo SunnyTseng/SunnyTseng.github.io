@@ -43,6 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,16 +109,16 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-science">    
         <li>
-    <a class="dropdown-item" href="../../science/academic.html">
- <span class="dropdown-text">Academic CV</span></a>
+    <a class="dropdown-item" href="../../science/writing.html">
+ <span class="dropdown-text">Popular Science Writing</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../science/project.html">
  <span class="dropdown-text">Research Project</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../science/writing.html">
- <span class="dropdown-text">Popular Science Writing</span></a>
+    <a class="dropdown-item" href="../../science/academic.html">
+ <span class="dropdown-text">Academic CV</span></a>
   </li>  
     </ul>
   </li>
@@ -207,7 +210,7 @@ ul.task-list li input[type="checkbox"] {
 <p>好吧，以上完全是個理想的故事，事實就是，我還是無可避免的賴床了。就在我汗流浹背、氣喘吁吁的跑進林地時，已經晚了日出時間五分鐘，那場早晨的派對早就已經開始，Pacific Wren 唱著複雜婉轉的曲調、遠方傳來 Flicker 的啄木聲、背景又襯著 Pine Siskin 動感的上揚音調。</p>
 <p>呼…我完全就像是個宴會遲到的賓客，匆忙架起錄音器材，心裡不停吶喊著「等我、等我…」。附近的林地上還有雪，於是我找了一個乾燥的角落，把自己跟麥克風藏在落葉堆裡、就此坐定。接著就是一場早晨的冥想、一段沒有人聲干擾的奢侈時光。啊，這樣奢侈的聽覺享受，就容我留給自己回憶吧。</p>
 <p>我想起野地錄音師 Gordon Hempton說過「I found the calmness and isolation in the silence. Didn’t criticize it, didn’t evaluate it, I just took it all in.」我很享受藉由聆聽，而能與自己真實相處的感受。</p>
-<p><img src="featured.jpg" class="img-fluid"></p>
+<p><a href="featured.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="featured.jpg" class="img-fluid"></a></p>
 
 
 
@@ -612,6 +615,38 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

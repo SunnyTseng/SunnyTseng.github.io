@@ -43,6 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,16 +109,16 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-science">    
         <li>
-    <a class="dropdown-item" href="../../science/academic.html">
- <span class="dropdown-text">Academic CV</span></a>
+    <a class="dropdown-item" href="../../science/writing.html">
+ <span class="dropdown-text">Popular Science Writing</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../science/project.html">
  <span class="dropdown-text">Research Project</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../science/writing.html">
- <span class="dropdown-text">Popular Science Writing</span></a>
+    <a class="dropdown-item" href="../../science/academic.html">
+ <span class="dropdown-text">Academic CV</span></a>
   </li>  
     </ul>
   </li>
@@ -221,7 +224,7 @@ ul.task-list li input[type="checkbox"] {
 <p>可以應用在 package development 的體貼有兩個面向，第一個是體貼夥伴，在 rOpenSci 裡面大部分都是 volunteer 的成員，像我的 mentor 就是完全志願的付出他的時間來教我，還有幾乎所有在同個 program 的夥伴，都是志願付出他們的時間在互相幫忙增進彼此技能，但志願不等同於免費，建立在強大善意的一個計畫裡，更需要好好的珍惜、尊重與感謝。尊重對方的時間、也感謝彼此的交流與共同成長。</p>
 <p>另一個體貼的面向，是體貼使用者。在開發工具的時候把使用的經驗放在第一位，像是:「這樣的視覺化配色是好的嗎、使用者的眼睛會太累嗎、這會需要太多額外的 dependency 嗎、這個資料集放在哪個路徑比較合乎邏輯」。這個概念對我來說蠻有啟發性的，我現在已經開始相信，一個工具可以取得、或使用的容易程度，甚至都比工具的效率還來的更重要。</p>
 <p>這是在聽完一場 coding 討論裡，默默的被一位我很尊敬的 programmer 所啟發的想法。簡單的 murmur，後續還想寫一些關於內在成就與外在成就的討論 (微笑)。然後找不到貓貓看 code 的照片，就以貓貓看我畫鳥的照片來代替。</p>
-<p><img src="IMG_1111.jpg" class="img-fluid"></p>
+<p><a href="IMG_1111.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="IMG_1111.jpg" class="img-fluid"></a></p>
 </section>
 <section id="外在成就與內在成就" class="level3">
 <h3 class="anchored" data-anchor-id="外在成就與內在成就">外在成就與內在成就</h3>
@@ -645,6 +648,38 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

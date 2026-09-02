@@ -43,6 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,16 +109,16 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-science">    
         <li>
-    <a class="dropdown-item" href="../../science/academic.html">
- <span class="dropdown-text">Academic CV</span></a>
+    <a class="dropdown-item" href="../../science/writing.html">
+ <span class="dropdown-text">Popular Science Writing</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../science/project.html">
  <span class="dropdown-text">Research Project</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../science/writing.html">
- <span class="dropdown-text">Popular Science Writing</span></a>
+    <a class="dropdown-item" href="../../science/academic.html">
+ <span class="dropdown-text">Academic CV</span></a>
   </li>  
     </ul>
   </li>
@@ -211,7 +214,7 @@ ul.task-list li input[type="checkbox"] {
 <p>「Sunny, it happens a lot frequent than you’d think.」，K 和緩的在視訊的另一邊說，他說沒關係，完全沒有關係。他冷靜的分析了幾條可能的路，找出來對我最有利的解決方法。他說，他可以理解我的猶豫，但這個機會還是可以留到未來、可以慢慢想。</p>
 <p>我不知道這個決定是否是「對」的，而答案大概也要等到長長久久的未來才能回答。過去的大風大浪並不會讓我在面對抉擇時比較不害怕，但我還是想好好的、真實的面對自己的感受。「到長長久久的以後，妳會想要別人怎麼記得妳的一生」，那個形容詞會是甚麼呢？</p>
 <p>「Sunny, you’re strong and very smart. You can’t make any wrong choices. Whatever you decide to do, don’t make your decision based on fear. Make the decision because you have the courage to do so.」，謝謝你們總是散發著光芒保護著我。其實還蠻想大哭一場的（笑），又，其實更想一起期待著，未來的故事。謝謝仍然相信著我的你們。</p>
-<p><img src="featured.jpg" class="img-fluid"></p>
+<p><a href="featured.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="featured.jpg" class="img-fluid"></a></p>
 </section>
 <section id="ii" class="level4">
 <h4 class="anchored" data-anchor-id="ii"># II</h4>
@@ -220,7 +223,7 @@ ul.task-list li input[type="checkbox"] {
 <p>我也以為，每個決定，都是個奢侈的下定決心。</p>
 <p>在享受著自己喜愛事物的同時，更時時刻刻提醒著，還可以為這個小小的世界做些不一樣的事情，還可以更多的、可以不用妥協的。My feet are on the ground, I just took the path that less traveled by（握拳）。</p>
 <p>布氏金梭魚（Sphyraena putnamae）與我的呼吸</p>
-<p><img src="IMG_5206.jpg" class="img-fluid"></p>
+<p><a href="IMG_5206.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="IMG_5206.jpg" class="img-fluid"></a></p>
 
 
 </section>
@@ -626,6 +629,38 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

@@ -43,6 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,16 +109,16 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-science">    
         <li>
-    <a class="dropdown-item" href="../../science/academic.html">
- <span class="dropdown-text">Academic CV</span></a>
+    <a class="dropdown-item" href="../../science/writing.html">
+ <span class="dropdown-text">Popular Science Writing</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../science/project.html">
  <span class="dropdown-text">Research Project</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../science/writing.html">
- <span class="dropdown-text">Popular Science Writing</span></a>
+    <a class="dropdown-item" href="../../science/academic.html">
+ <span class="dropdown-text">Academic CV</span></a>
   </li>  
     </ul>
   </li>
@@ -221,19 +224,19 @@ ul.task-list li input[type="checkbox"] {
 <p>來到會場之後，整個驚為天人。POSIT 直接包下整個西雅圖市中心的飯店，從三到七樓都是會議場地，而同個飯店就是與會者的住宿地點。從前身叫做 RStudio 就可以推測，大部分的 workshop 與 session 都以 R 為主，連註冊的小本本都是一整冊的 cheatsheets! 直接深深的切中我心。同時也有很多 Python 的 talk。</p>
 <p>幾個亮點，親自上了 Jenny Bryan 一整天的 Package development workshop，如沐春風，本人超級和藹美麗，還有獲得 debug 小鴨鴨；Posit 繼 RStudio 之後推出新的 IDE 叫做 Positron；開完會頓時成為 hexagon stickers 富有人家。</p>
 <p>身為一個 RStudio 與 Open source 的熱愛者，和兩千位擁有同樣熱情的軟體工程師共同參與的會議，和今年稍早參加的鳥鳥會議，或是生物聲學會議完全不同的氣氛，簡直像來到另一個世界。</p>
-<p><img src="./IMG_7410.JPG" class="img-fluid"></p>
+<p><a href="./IMG_7410.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="./IMG_7410.JPG" class="img-fluid"></a></p>
 </section>
 <section id="workshop-package-development---來見見偶像" class="level3">
 <h3 class="anchored" data-anchor-id="workshop-package-development---來見見偶像">Workshop: Package development - 來見見偶像</h3>
 <p>自從加入 rOpenSci 開發 R package 以來，已經將近半年的時間，在 R package 的世界裡有無限的可能。有在寫 R package 的人大概都知道 <a href="https://r-pkgs.org/">R Packages (2e)</a> 這本書，由 Hadley Wickham 與 Jennifer Bryan 共同撰寫。這次的 package development 就是 Jenny 主講，親身體驗到偶像的無限魅力 (再度被圈粉)。</p>
 <p>Workshop 主要針對 package development 背景的人，大概就是我這樣程度的人，已經會畫貓頭鷹的兩個圈圈，但還有很多可以讓貓頭鷹變漂亮的細節。這次主要包含了四個主題: General workflow、Test、Documentation、GitHub actions and CLI package。</p>
 <p>Workshop Github repo 在此: https://github.com/posit-conf-2024/pkg-dev</p>
-<p><img src="./IMG_7341.JPG" class="img-fluid"></p>
+<p><a href="./IMG_7341.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="./IMG_7341.JPG" class="img-fluid"></a></p>
 <p>一些令人眼睛一亮的新技能</p>
 <p>For Test: - Don’t include <code>library()</code> or <code>source()</code> in any test scripts. - Turn on <code>testthat()</code> parallel testing by using testthat 3rd edition. Check <a href="https://testthat.r-lib.org/reference/is_testing.html">instructions</a>. - The <code>tests/testthat/helper.R</code> will run before all the test files, thus a good location to include files needed in the test. - For single file test, use <code>devtools::test_active_file()</code> and <code>devtools::test_coverage_active_file()</code>. And use <code>devtools::test()</code> for the whole package. - <a href="https://testthat.r-lib.org/articles/snapshotting.html">Snapshot test</a> is good for complicated test. - <a href="https://testthat.r-lib.org/reference/skip.html">Skip tests</a> whenever needed! This is SO useful, especially in the GitHub Actions and on CRAN. Will add this to the BirdNET project. - GitHub Action for R-CMD-check can be disabled on the browser.</p>
 <p>For Documentation: - Never do the following in the documentation: writing files, setting up options, or changing working directory. - Write detailed examples. Use <code>try()</code> for code that don’t run in the roxygen, instead of <code>don't run</code>. The later one will be rejected by CRAN. - Make use of links in the roxygen to link between functions. - Write <code>_pkgdown.ymal</code> for customized pkgdown arrangment. - Check the urls by <code>pak::url_check()</code>.</p>
 <p>CLI package (Command Line Interfaces) - Use <a href="https://cli.r-lib.org/">CLI tools</a> to build attractive command line interfaces</p>
-<p><img src="./IMG_7346.JPG" class="img-fluid"></p>
+<p><a href="./IMG_7346.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="./IMG_7346.JPG" class="img-fluid"></a></p>
 </section>
 <section id="keynote-posit-update" class="level3">
 <h3 class="anchored" data-anchor-id="keynote-posit-update">Keynote: POSIT update</h3>
@@ -243,9 +246,9 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://docs.r-wasm.org/webr/latest/">WebR</a> - R in the Browser: 可以在沒有下載 R 的狀況下直接用 Browser 跑 R code，甚至可以互動而且更改環境。我其實不太清楚他跟 <a href="https://posit.cloud/">Posit cloud</a> 的免費版本有甚麼不一樣(汗顏)，可以再研究看看!</li>
 <li><a href="https://github.com/posit-dev/positron">Positron</a>: “A next-generation data science IDE built by Posit PBC”。這個不用多提了，把 RStudio 的好直接改成 polyglot tool，是 POSIT 今年的主打。</li>
 </ol>
-<p><img src="./IMG_7363.JPG" class="img-fluid"></p>
+<p><a href="./IMG_7363.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="./IMG_7363.JPG" class="img-fluid"></a></p>
 <p>其他的就是再複習一次 POSIT 的經典 open source product: - Rstudio IDE - Shinny - Shinny Server - R packages (tidyverse, tidyvermodels, ggplot2, etc.) - Quarto</p>
-<p><img src="./IMG_7398.JPG" class="img-fluid"></p>
+<p><a href="./IMG_7398.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="./IMG_7398.JPG" class="img-fluid"></a></p>
 </section>
 <section id="how-to-make-great-tables" class="level3">
 <h3 class="anchored" data-anchor-id="how-to-make-great-tables">How to make Great Tables</h3>
@@ -255,12 +258,12 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://gt.rstudio.com/index.html">gt</a>: Make it simple to produce nice-looking display tables</li>
 <li><a href="https://www.danieldsjoberg.com/gtsummary/index.html">gtsummary</a>: Provide an elegant and flexible way to create publication-ready analytical and summary tables using the R programming language.</li>
 </ul>
-<p><img src="./IMG_7381.JPG" class="img-fluid"></p>
+<p><a href="./IMG_7381.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="./IMG_7381.JPG" class="img-fluid"></a></p>
 </section>
 <section id="keynote-use-genai-for-data-science" class="level3">
 <h3 class="anchored" data-anchor-id="keynote-use-genai-for-data-science">Keynote: Use GenAI for Data Science</h3>
 <p>這場超級精彩，而且主講人是加拿大人(覺得溫馨)，筆記有點多之後來慢慢補。</p>
-<p><img src="./IMG_7395.JPG" class="img-fluid"></p>
+<p><a href="./IMG_7395.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="./IMG_7395.JPG" class="img-fluid"></a></p>
 </section>
 <section id="keynote-the-future-of-data-science" class="level3">
 <h3 class="anchored" data-anchor-id="keynote-the-future-of-data-science">Keynote: The Future of Data Science</h3>
@@ -279,7 +282,7 @@ ul.task-list li input[type="checkbox"] {
 <p>最讓人印象深刻的是他對於世界的正向心態，並不是無知的正向心態，而是完整的藉由資料來提供客觀的證據，藉此建立起自己世界觀的信心。在 QA 中被問到 “你身為白人男性的身分影響你對世界的看法，你要如何抽離這樣身分造成的的偏差”，在我聽來非常尖銳的提問。</p>
 <p>他只是簡單地承認自己身為白人男性的確是擁有了很多優勢，但是他所提供的這些想法是他盡量找到的客觀知識，同時他也提到了，這些推論都是自己的想法，很樂意聽大家的想法與討論。他也說，鼓勵有這些疑問的人，可以思考一下自己為什麼自己會有這樣的情緒出現。</p>
 <p>幾段想記錄的話: - Data science exists because statistics missed the boat on computers. - Wanting to know the truth is the key for defeating confirmation bias.</p>
-<p><img src="./IMG_7401.JPG" class="img-fluid"></p>
+<p><a href="./IMG_7401.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="./IMG_7401.JPG" class="img-fluid"></a></p>
 </section>
 <section id="keynote-duckdb" class="level3">
 <h3 class="anchored" data-anchor-id="keynote-duckdb">Keynote: DuckDB</h3>
@@ -287,7 +290,7 @@ ul.task-list li input[type="checkbox"] {
 <p>作者超可愛，取 duckDB 原來是因為曾經養過鴨子。</p>
 <p><a href="https://duckdb.org/">DockDB</a> - 做 database 的工具，不太熟悉，但全場幾乎有一伴的人有用過 DockDB!</p>
 <p>跟 DockDB 不熟的我也許可以先試試看這個跟 tidyverse 共同開發的 <a href="https://duckdb.org/2024/04/02/duckplyr.html">duckplyer</a></p>
-<p><img src="./IMG_7389.JPG" class="img-fluid"></p>
+<p><a href="./IMG_7389.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="./IMG_7389.JPG" class="img-fluid"></a></p>
 </section>
 <section id="好朋友們還有我自己的照片" class="level3">
 <h3 class="anchored" data-anchor-id="好朋友們還有我自己的照片">好朋友們還有我自己的照片</h3>
@@ -296,12 +299,12 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Jorge A. Ahumada (jorge@wildlifeinsights.org): 是 Wildlife Insights 的創辦人，認識 Cole，他們的公司主要處裡生物多樣性的資料處理，包含自動相機與自動錄音機。他們的公司也是製作 <a href="https://arbimon.org/">Arbimon</a> 的!! 其中付費的選項就是使用 BirdNET 的 API。想寫信問問他願不願意來給 UNBC 一場 talk。</p></li>
 <li><p>Stefanie Butland (https://github.com/stefaniebutland): ROpenSci 的前任 community organizer，認識 Steffi 還有</p></li>
 </ul>
-<p><img src="./IMG_7343.JPG" class="img-fluid"></p>
-<p><img src="./IMG_3916.JPG" class="img-fluid"></p>
-<p><img src="./IMG_3969.JPG" class="img-fluid"></p>
-<p><img src="./IMG_3998.JPG" class="img-fluid"></p>
-<p><img src="./IMG_4004.JPG" class="img-fluid"></p>
-<p><img src="./featured.JPG" class="img-fluid"></p>
+<p><a href="./IMG_7343.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="./IMG_7343.JPG" class="img-fluid"></a></p>
+<p><a href="./IMG_3916.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img src="./IMG_3916.JPG" class="img-fluid"></a></p>
+<p><a href="./IMG_3969.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img src="./IMG_3969.JPG" class="img-fluid"></a></p>
+<p><a href="./IMG_3998.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="./IMG_3998.JPG" class="img-fluid"></a></p>
+<p><a href="./IMG_4004.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img src="./IMG_4004.JPG" class="img-fluid"></a></p>
+<p><a href="./featured.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img src="./featured.JPG" class="img-fluid"></a></p>
 
 
 </section>
@@ -707,6 +710,38 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

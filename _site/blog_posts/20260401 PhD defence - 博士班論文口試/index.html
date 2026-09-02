@@ -43,6 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,16 +109,16 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-science">    
         <li>
-    <a class="dropdown-item" href="../../science/academic.html">
- <span class="dropdown-text">Academic CV</span></a>
+    <a class="dropdown-item" href="../../science/writing.html">
+ <span class="dropdown-text">Popular Science Writing</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../science/project.html">
  <span class="dropdown-text">Research Project</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../science/writing.html">
- <span class="dropdown-text">Popular Science Writing</span></a>
+    <a class="dropdown-item" href="../../science/academic.html">
+ <span class="dropdown-text">Academic CV</span></a>
   </li>  
     </ul>
   </li>
@@ -208,18 +211,18 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="the-ubc-defence-i.e.-defence-practice" class="level2">
 <h2 class="anchored" data-anchor-id="the-ubc-defence-i.e.-defence-practice">The UBC defence (i.e., defence practice)</h2>
-<p><img src="IMG_5888.JPG" class="img-fluid"></p>
+<p><a href="IMG_5888.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="IMG_5888.JPG" class="img-fluid"></a></p>
 <p>At the moment I put down these notes, it is 4 days after the defense practice in UBC, and 3 days before the “official” defense on April 1st. The sun is shining into my room, while I am packing all the thick clothes ready to fly to cold Prince George tomorrow early morning.</p>
 <p>It was a phenomenal event last Wednesday (Mar.&nbsp;25), the day I will always remember with a full room of people. It warms my heart, not only for the opportunity to reflect on the research work I have done in the past few years, but also the fact that I could share such a journey with everyone in the room: WildCo people, Gaynor’s lab, Ildiko, Chris, Liam, Maya, Peter, Stella, Derek, Mandy, Bev, Mom and Gintas, and cute Kibo (!), and more people than I can individually list.</p>
 <p>I can still remember the smiles, the nodding, the faces, and the eyes that I saw while presenting on the stage. For the past few years, I have interacted with all of you, in ways big or small, and how fortunate I am to have this opportunity to stand here sharing some of the things I learned. And I have grown so much as well! I remember that, about 10 years ago, I was a person who would cry from speaking English in front of people… now I am actually enjoying standing on the stage!</p>
 <p>“Raising a child takes a village, and I think finishing a PhD takes at least half of the village.” It’s not easy to go through the past few years—graduate school has (a lot of) fun parts and also hard times, probably just like all other journeys. There were also moments when I thought I would not finish this PhD (maybe I should wait until after the official defence to say this). Aside from science itself, being able to know and work with so many cool and fun people is one of my favorite things about staying in academia.</p>
 <p>The past month preparing for this defense gave me so much time for reflection and appreciation. It was a truly emotional period of time—a mixture of excitement for finishing a big task, the sadness of closing a chapter of life, the joy of seeing all the work coming together, and the imposter syndrome of not achieving more. These emotions could sometimes be overwhelming, but the more I thought about it, the more I see how nice it is to have such a time to “focus” only on one thing—preparing the final celebration of your degree.</p>
 <p>Full of gratitude, I look forward to making the April Fool’s Day defence a great event with everyone and enjoying every moment when it comes.</p>
-<p><img src="featured.JPG" class="img-fluid"></p>
-<p><img src="IMG_5878.JPG" class="img-fluid"></p>
-<p><img src="IMG_5119.jpg" class="img-fluid"></p>
-<p><img src="IMG_1246.jpg" class="img-fluid"></p>
-<p><img src="IMG_5887.JPG" class="img-fluid"></p>
+<p><a href="featured.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="featured.JPG" class="img-fluid"></a></p>
+<p><a href="IMG_5878.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="IMG_5878.JPG" class="img-fluid"></a></p>
+<p><a href="IMG_5119.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="IMG_5119.jpg" class="img-fluid"></a></p>
+<p><a href="IMG_1246.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="IMG_1246.jpg" class="img-fluid"></a></p>
+<p><a href="IMG_5887.JPG" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="IMG_5887.JPG" class="img-fluid"></a></p>
 <p>I was thinking really hard about the questions raised from the audience! Such a great discussion!</p>
 </section>
 <section id="the-actual-defence-itself-真正的口試" class="level2">
@@ -638,6 +641,38 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

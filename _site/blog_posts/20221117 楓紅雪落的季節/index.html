@@ -43,6 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,16 +109,16 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-science">    
         <li>
-    <a class="dropdown-item" href="../../science/academic.html">
- <span class="dropdown-text">Academic CV</span></a>
+    <a class="dropdown-item" href="../../science/writing.html">
+ <span class="dropdown-text">Popular Science Writing</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../science/project.html">
  <span class="dropdown-text">Research Project</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../science/writing.html">
- <span class="dropdown-text">Popular Science Writing</span></a>
+    <a class="dropdown-item" href="../../science/academic.html">
+ <span class="dropdown-text">Academic CV</span></a>
   </li>  
     </ul>
   </li>
@@ -208,7 +211,7 @@ ul.task-list li input[type="checkbox"] {
 <p>在時間軸上不斷前進的我們，所有的經歷、成就、相遇、分離都以強大的力量形塑著每一個人，有時那股力量會強大到讓人忘記思考。但要一直記得，我們仍可以自由的選擇想成為的樣子、自由的選擇去面對這一切的心境（雖然有時很不簡單），並為自己寫自己的故事 – 那種自由，是在這裡的歲月裡學到的，也是我覺得最幸福的地方。</p>
 <p>PS. 1 不同於從小到大習慣的鳳凰花開畢業季，在加拿大的大學畢業季有兩個，一次六月、一次十一月；不是陽光撒滿地的華麗夏季，就是楓紅雪落的陰雨冬天。</p>
 <p>PS. 2 畢業當天有阿寧來陪開場、有薛景中臨時被約來、有收到曉萌的花、有臨時被禁足的 Peter （笑），還有物理空間外的強力支持（但手機在典禮當天掉了，拿回來時才看到），謝謝所有陪在身邊的你們（抱）。</p>
-<p><img src="featured.jpg" class="img-fluid"></p>
+<p><a href="featured.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="featured.jpg" class="img-fluid"></a></p>
 </section>
 <section id="ii" class="level4">
 <h4 class="anchored" data-anchor-id="ii"># II</h4>
@@ -229,14 +232,14 @@ ul.task-list li input[type="checkbox"] {
 <p>我們畢業於臺灣大學物理學系。</p>
 <p>我是 B01 畢業生致詞代表 曾奕晴。</p>
 <p>謝謝四年來的一切，謝謝大家。</p>
-<p><img src="P1010006.jpg" class="img-fluid"></p>
+<p><a href="P1010006.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="P1010006.jpg" class="img-fluid"></a></p>
 </section>
 <section id="iii" class="level4">
 <h4 class="anchored" data-anchor-id="iii"># III</h4>
 <p>從家裡老舊的電腦主機翻出來的老舊照片。完完整整的十年，北一日快樂！</p>
 <p>看了照片研究很久，這一系列應該是高三要畢業前的某周末，和柯柯一起在光復樓邊玩邊拍的，當時還沒有寫日記的習慣，所以每過一個北一日，能記得的高中回憶就少了一點，幸好還有這些照片可以回味。眼睛瞇瞇瀏海超平。</p>
 <p>那個紅色的鉛筆盒最後掉在火車上、再也沒找回來了，左邊的保溫杯還在舊家，右邊那個…沒想到當時會喝這麼大杯的飲料。 「惟天為大，如日方中，英姿煥發，北一女中」。感謝這段帶我從鄉村到都市的青春歲月；感謝這個教會我尖叫、任性、奔跑、哭泣、成長、揮灑無悔青春的青青校園。</p>
-<p><img src="IMG_0696_1.jpg" class="img-fluid"></p>
+<p><a href="IMG_0696_1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="IMG_0696_1.jpg" class="img-fluid"></a></p>
 
 
 </section>
@@ -642,6 +645,38 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

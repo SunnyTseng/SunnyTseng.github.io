@@ -43,6 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,16 +109,16 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-science">    
         <li>
-    <a class="dropdown-item" href="../../science/academic.html">
- <span class="dropdown-text">Academic CV</span></a>
+    <a class="dropdown-item" href="../../science/writing.html">
+ <span class="dropdown-text">Popular Science Writing</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../science/project.html">
  <span class="dropdown-text">Research Project</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../science/writing.html">
- <span class="dropdown-text">Popular Science Writing</span></a>
+    <a class="dropdown-item" href="../../science/academic.html">
+ <span class="dropdown-text">Academic CV</span></a>
   </li>  
     </ul>
   </li>
@@ -221,7 +224,7 @@ ul.task-list li input[type="checkbox"] {
 <li>French by Jerome</li>
 <li>United Kingdom by Oliver (for the monitoring guideline)</li>
 </ul>
-<p><img src="IMG_7192.jpg" class="img-fluid"></p>
+<p><a href="IMG_7192.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="IMG_7192.jpg" class="img-fluid"></a></p>
 </section>
 <section id="potential-research" class="level3">
 <h3 class="anchored" data-anchor-id="potential-research">Potential research</h3>
@@ -232,7 +235,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Building the Audacity plug-in with signal detection (output frequency range and time range). And provide a standard annotation prototocal.</li>
 <li>Link the number of detections to the number of signals.</li>
 </ul>
-<p><img src="IMG_1236.jpg" class="img-fluid"></p>
+<p><a href="IMG_1236.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="IMG_1236.jpg" class="img-fluid"></a></p>
 </section>
 <section id="xeno-canto" class="level3">
 <h3 class="anchored" data-anchor-id="xeno-canto">Xeno-Canto</h3>
@@ -243,7 +246,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Strong labelling 可以大大的加強之後在 train BirdNET 或其他工具時的準確性。</li>
 <li>標記的工具，目前想要開發可以結合 Audacity 的工具，直接做 signal detection。可能可以結合的工具有: BirdNET、Perch、</li>
 </ul>
-<p><img src="featured.jpg" class="img-fluid"></p>
+<p><a href="featured.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="featured.jpg" class="img-fluid"></a></p>
 </section>
 <section id="birdnet" class="level3">
 <h3 class="anchored" data-anchor-id="birdnet">BirdNET</h3>
@@ -259,7 +262,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>第一場 Seminar 結束後，Josef (其中一位 BirdNET 的工程師)直接來說「Your presentation is the best of all.」天啊，整個融化。發現 BirdNET 的團隊非常的小，他們的工程師也非常的好奇這個工具目前是怎麼被生態人利用的，他們對於生態的語言以及我們常在使用的工具其實不甚了解，但就資訊分析方面非常精準，有甚麼需求都能變出來的厲害。</p>
 <p>PS. 第二天晚上一起去看西班牙大戰法國，然後一直討論 Avatar，太開心啦!兩個大男孩非常的可愛!</p>
-<p><img src="IMG_1234.jpg" class="img-fluid"></p>
+<p><a href="IMG_1234.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="IMG_1234.jpg" class="img-fluid"></a></p>
 
 
 </section>
@@ -665,6 +668,38 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
