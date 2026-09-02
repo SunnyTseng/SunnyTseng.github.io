@@ -13,8 +13,6 @@
   font-weight: 700; /* Bold (or 800 for extra bold) */
 }
 
-
-
 /* 2. Target Mobile Devices (Screens 768px and smaller) */
 @media (max-width: 768px) {
   body {
