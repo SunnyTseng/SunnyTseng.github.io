@@ -4,6 +4,7 @@ description: 拿到加拿大 MSFSS 獎學金前往德國 Chemnitz 小鎮住了�
 
 author: Sunny Tseng
 date: 2025-04-30
+image: featured.JPG
 
 categories: 
   - travel

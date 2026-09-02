@@ -4,6 +4,7 @@ description: 是 PhD 生涯中的第一場北美以外的國際會議，碰碰�
 
 author: Sunny Tseng
 date: 2024-07-05
+image: featured.JPG
 
 categories: 
   - travel

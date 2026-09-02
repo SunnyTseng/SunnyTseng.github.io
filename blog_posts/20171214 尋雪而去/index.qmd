@@ -4,6 +4,7 @@ description: 我沈浸在攝氏兩度的空氣裡，每一口呼吸，都能嗅�
 
 author: Sunny Tseng
 date: 2017-12-14
+image: featured.jpg
 
 categories: 
   - travel

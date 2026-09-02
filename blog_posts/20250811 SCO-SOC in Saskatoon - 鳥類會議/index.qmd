@@ -4,6 +4,7 @@ description: 從設計 logo 到開工作坊還有個人的小擺攤，紀念 PhD
 
 author: Sunny Tseng
 date: 2025-08-11
+image: featured.JPG
 
 categories: 
   - Canada

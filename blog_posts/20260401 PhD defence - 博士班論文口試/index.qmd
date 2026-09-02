@@ -4,6 +4,7 @@ description: From Recordings to Ecology - Turning Bird Sounds into Ecological In
 
 author: Sunny Tseng
 date: 2026-03-30
+image: featured.JPG
 
 categories: 
   - Canada

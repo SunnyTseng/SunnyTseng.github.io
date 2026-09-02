@@ -2,9 +2,9 @@
 title: 獵人筆記
 description: 初次與心中最美好的那片土地，相遇的故事。清晨五點，門外的木板嘎嘎作響，我躺在床上眼睛微張，陽光灑進小木屋裡襯著牆、襯著地板，整個空間輝映著...
 
-
 author: Sunny Tseng
 date: 2018-07-01
+image: featured.JPG
 
 categories: 
   - nature

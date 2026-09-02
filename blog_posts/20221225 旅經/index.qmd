@@ -4,6 +4,7 @@ description: 在日本與臺灣度過的華麗冬季假期。不論如何，每�
 
 author: Sunny Tseng
 date: 2022-12-25
+image: featured.JPG
 
 categories: 
   - travel

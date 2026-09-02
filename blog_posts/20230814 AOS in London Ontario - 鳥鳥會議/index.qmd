@@ -4,6 +4,7 @@ description: 帶著美美的海報要出發啦。這次卯起來把學術海報�
 
 author: Sunny Tseng
 date: 2023-08-14
+image: featured.JPG
 
 categories: 
   - World

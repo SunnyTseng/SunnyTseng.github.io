@@ -4,6 +4,7 @@ description: 大概是此生唯一會有的申請公民的經驗了。
  
 author: Sunny Tseng
 date: 2025-03-25
+image: featured.jpg
 
 categories: 
   - Canada

@@ -4,6 +4,7 @@ description: Gintas 在龍年的初一來到台灣，一起度過了為期兩周
 
 author: Sunny Tseng
 date: 2024-02-10
+image: featured.JPG
 
 categories: 
   - travel

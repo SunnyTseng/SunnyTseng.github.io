@@ -4,6 +4,7 @@ description: 世界動盪的一年。
 
 author: Sunny Tseng
 date: 2020-03-21
+image: featured.JPG
 
 categories: 
   - travel

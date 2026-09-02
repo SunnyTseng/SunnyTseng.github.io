@@ -4,6 +4,7 @@ description: 原本以為就是個六年之後再度訪問歐洲的度假之旅�
 
 author: Sunny Tseng
 date: 2024-06-26
+image: featured.JPG
 
 categories: 
   - travel

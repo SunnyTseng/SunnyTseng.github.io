@@ -3,7 +3,8 @@ title: 20 歲的單車環島日記（上）
 description: 那些青春的熱情、單純、與毫不保留的笑聲，在回首回憶時，不斷滋養著自己
 
 author: Sunny Tseng
-date: "2014-08-09"
+date: 2014-08-09
+image: featured.JPG
 
 categories: 
   - travel
