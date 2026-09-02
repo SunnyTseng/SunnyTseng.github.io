@@ -44,3 +44,5 @@ editor: source
 
 lightbox: true
 
+execute:
+  freeze: auto
