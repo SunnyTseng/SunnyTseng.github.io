@@ -43,6 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-dfb324f25d9b1687192fa8be62ac8f9c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,16 +109,16 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-science">    
         <li>
-    <a class="dropdown-item" href="../../science/academic.html">
- <span class="dropdown-text">Academic CV</span></a>
+    <a class="dropdown-item" href="../../science/writing.html">
+ <span class="dropdown-text">Popular Science Writing</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../../science/project.html">
  <span class="dropdown-text">Research Project</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../science/writing.html">
- <span class="dropdown-text">Popular Science Writing</span></a>
+    <a class="dropdown-item" href="../../science/academic.html">
+ <span class="dropdown-text">Academic CV</span></a>
   </li>  
     </ul>
   </li>
@@ -227,7 +230,7 @@ ul.task-list li input[type="checkbox"] {
 <p>我，愛上台灣了。期許自己要一直保有一顆愛冒險、充滿溫暖的心啊！！</p>
 <p>PS. 有機會再跟大家分享這七天來每天的際遇，每天都有截然不同的體會呢！</p>
 <p>PS1. 我知道，這段旅程，是不能複製，也不可能重現的，這是生命給我的，最棒的 20 歲成年禮…</p>
-<p><img src="featured.jpg" class="img-fluid"></p>
+<p><a href="featured.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="featured.jpg" class="img-fluid"></a></p>
 
 
 
@@ -632,6 +635,38 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
