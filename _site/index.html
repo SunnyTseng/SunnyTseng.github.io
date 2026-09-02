@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -149,14 +149,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-  <ul>
-  <li><a href="#about-me" id="toc-about-me" class="nav-link active" data-scroll-target="#about-me">About Me</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <div class="quarto-about-broadside column-page">
   <div class="about-main">
@@ -168,21 +161,18 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
   </div>
 </header><main class="content" id="quarto-document-content">
-
 <p><strong>Hello! I am Sunny, an independent ecological consultant and R programmer based in Vancouver, Canada</strong>.</p>
 <blockquote class="blockquote">
 <p>I earned my PhD in the spring of 2026 and am currently leading international projects, including an acoustic monitoring study in Lithuania (supported by National Geographic and Wildlife Acoustics), and working as a software developer with the BirdNET Team at the Cornell Lab of Ornithology (funded by the R Consortium), all while launching my business as an independent consultant!</p>
 </blockquote>
-<hr>
-<!-- Break out of the two-column template layout -->
-<section id="about-me" class="level2">
-<h2 data-anchor-id="about-me">About Me</h2>
+<section id="about-me" class="level4">
+<h4 data-anchor-id="about-me">About Me</h4>
 <p>哈囉，我是奕晴，來自於一個美麗的熱帶小島 - 臺灣。台大物理系、森林系雙主修畢業後，到加拿大溫哥華就讀碩士班、博士，主要從事鳥類聲學研究，在這些年歲中，於臺灣、加拿大、俄羅斯、立陶宛等世界各地進行研究，收集了三百多種鳥類的鳴唱聲音。曾獲得國家地理頻道 Early Career Grant、加拿大鳥類學會 Taverner Award、加拿大自然科學與工程研究委員會全額研究獎學金。並已在國際期刊發表數篇研究成果。</p>
 <p>平時以科學研究為正職，遊走於生態資料科學家、藝術繪圖者、自然書寫者等專業間。同時享受藝術創作、寫作、及野外錄音帶來的生活反思，某種程度上，我認為那更能反映出我所認識的世界。看到水會想跳、看到山會想爬、喜歡抱樹、喜歡一個人靜靜地走路、每天要花一個小時吃早餐。目前定居於加拿大溫哥華，另一個靠海的美麗地方，家門口望向海的方向，就是臺灣。</p>
 <p>Hi there! I was born and raised in a beautiful country - Taiwan, and now call Vancouver, Canada, my second home. I’ve spent much of my career conducting bird-related scientific research in Siberia, Taiwan, Canada, and Lithuania, collecting bird sounds from more than 300 species - check them out on my <a href="https://xeno-canto.org/contributor/SPMWIWZKKC">Xeno-Canto</a>! I also enjoy writing <a href="https://sunnytseng.ca/research/">popular science articles</a> in both Traditional Chinese and English. Exploring this world with great enthusiasm and self-reflection is how I guide my life.</p>
+
+
 </section>
-
-
 </main></div>
   </div>
   <div class="about-links">
@@ -266,7 +256,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/idyllic-biscotti-8a44f3\.netlify\.app");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
