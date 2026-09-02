@@ -1,3 +1,6 @@
 ---
-title: "research projects"
+title: "&nbsp;"
+
+page_layout: full
+title-block-banner: ../images/cover_science.JPG
 ---

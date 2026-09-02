@@ -1,5 +1,8 @@
 ---
-title: "Popular Science Writing"
+title: "&nbsp;"
+
+page_layout: full
+title-block-banner: ../images/cover_science.JPG
 
 listing:
   contents: writing_popular_science

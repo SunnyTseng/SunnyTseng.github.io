@@ -1,5 +1,7 @@
 ---
-title: "fine_art"
-format: html
+title: "&nbsp;"
+
+page_layout: full
+title-block-banner: ../images/cover_art.JPG
 ---
 

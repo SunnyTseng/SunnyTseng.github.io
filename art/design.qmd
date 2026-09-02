@@ -1,5 +1,9 @@
 ---
-title: "Scientific Visual Design"
+title: "&nbsp;"
+
+page_layout: full
+title-block-banner: ../images/cover_art.JPG
+
 format: html
 
 extensions:

@@ -1,10 +1,17 @@
 /* css styles */
 
-
 /* Add a subtle drop shadow to the top navigation bar */
 .navbar {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
+
+/* Add a subtle drop shadow to the bottom of the title banner */
+.quarto-title-banner {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  position: relative; /* Ensures the shadow renders on top of the page content below */
+  z-index: 1;
+}
+
 
 
 /* Nav bar styling */
@@ -13,7 +20,9 @@
   font-weight: 700; /* Bold (or 800 for extra bold) */
 }
 
-/* 2. Target Mobile Devices (Screens 768px and smaller) */
+
+
+/* Mobile Devices (Screens 768px and smaller) */
 @media (max-width: 768px) {
   body {
     font-size: 0.9375rem; /* ~15px base size for mobile, matching standard Hugo themes */
@@ -30,4 +39,14 @@
   h3 {
     font-size: 1.2rem;
   }
+}
+
+
+/* Enable parallax scroll on title banners */
+.quarto-title-banner {
+  background-attachment: fixed;  /* Keeps the background image fixed in place */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image tiling */
+  background-size: cover;       /* Ensures the image fills the banner area */
+  min-height: 150px;            /* Gives enough height to see the effect */
 }

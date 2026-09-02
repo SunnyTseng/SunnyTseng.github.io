@@ -1,5 +1,8 @@
 ---
-title: "Sound recordings"
+title: "&nbsp;"
+
+page_layout: full
+title-block-banner: ./images/cover_sound.JPG
 ---
 
 Showcase my interactive maps and also all the previous works

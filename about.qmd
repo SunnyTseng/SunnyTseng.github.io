@@ -1,14 +1,16 @@
 ---
-title: "Consulting works"
+title: "&nbsp;"
+
+page_layout: full
+title-block-banner: ./images/cover_about.jpg
 ---
 
 Welcome to my website! Wait a minute! It's not responding again!
 
 How about now? 
 
-ah ah 
+ah ah
 
-how about now>? 
+Test how it works no it doesn't update 
 
-ah
 
