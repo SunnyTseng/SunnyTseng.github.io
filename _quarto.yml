@@ -32,6 +32,14 @@ website:
         
       - href: sound.qmd
         text: Sound
+        
+  page-navigation: true
+  page-footer: 
+    right: "Created with Quarto by Sunny Tseng; Updated {{< meta date >}}" 
+
+date: today
+date-format: "YYYY-MM-DD"  
+  
 format:
   html:
     theme:

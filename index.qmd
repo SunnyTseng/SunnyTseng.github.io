@@ -12,7 +12,6 @@ about:
       href: https://www.linkedin.com/in/sunnytseng/
 ---
 
-
 **Hello! I am Sunny, an independent ecological consultant and R programmer based in Vancouver, Canada**.
 
 > I earned my PhD in the spring of 2026 and am currently leading international projects, including an acoustic monitoring study in Lithuania (supported by National Geographic and Wildlife Acoustics), and working as a software developer with the BirdNET Team at the Cornell Lab of Ornithology (funded by the R Consortium), all while launching my business as an independent consultant!

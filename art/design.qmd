@@ -1,5 +1,6 @@
 ---
-title: "design"
+title: "Scientific Visual Design"
 format: html
+lightbox: auto
 ---
 

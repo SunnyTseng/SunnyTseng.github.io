@@ -47,7 +47,7 @@ draft: false
 -   Strong labelling 可以大大的加強之後在 train BirdNET 或其他工具時的準確性。
 -   標記的工具，目前想要開發可以結合 Audacity 的工具，直接做 signal detection。可能可以結合的工具有: BirdNET、Perch、
 
-![](featured.jpg)
+![](featured.JPG)
 
 ### BirdNET
 
