@@ -19,4 +19,4 @@ Here are some beautiful photos:
 
 {{< photo-gallery >}}
 
-And here's some more text.
+And here's some more text. Why
