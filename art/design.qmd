@@ -4,24 +4,18 @@ title: "&nbsp;"
 page_layout: full
 title-block-banner: ../images/cover_art.JPG
 
-format: html
-
-extensions:
-  photo-gallery:
-    # Path to your image folder
-    album-files: design
-    # justified | masonry | grid
-    layout: justified
-    # Target row height in px (in the justified layout)
-    thumbnail-height: 300
-    # gap between images in px
-    gap: 5
-    
-# tutorial: https://andrewheiss.github.io/quarto-static-photo-gallery/
+listing:
+  id: listing-gallery
+  template: design.ejs
+  contents: 
+    - design/*
+  sort-ui: false
+  filter-ui: false
+  categories: false
+  sort: "path asc"
 ---
 
-Here are some beautiful photos:
+Scientific visual design brought me huge satisfaction. It gave me the opportunity to dive deep into other scientists' work and bring it to life — much like a translator! I particularly love creating infographics, but I also take commissions for logo and icon design.
 
-{{< photo-gallery >}}
-
-And here's some more text. Why
+::: {#listing-gallery}
+:::
