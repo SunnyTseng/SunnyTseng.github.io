@@ -5,10 +5,10 @@ page_layout: full
 title-block-banner: ../images/cover_science.JPG
 
 listing:
-  contents: writing_popular_science
+  contents: writing
   type: grid # Renders a visual card layout
   sort: "date desc"
   categories: true
 ---
 
-I love writing popular science articles to share the joy and discoveries of being a scientist. I mostly write in Traditional Chinese for readers in Taiwan, but I also write in English from time to time for Canadian magazines.
+> I love writing popular science articles to share the joy and discoveries of being a scientist. I mostly write in Traditional Chinese for readers in Taiwan, but I also write in English from time to time for Canadian magazines.

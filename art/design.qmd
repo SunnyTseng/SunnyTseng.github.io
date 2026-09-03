@@ -15,7 +15,7 @@ listing:
   sort: "path asc"
 ---
 
-Scientific visual design brought me huge satisfaction. It gave me the opportunity to dive deep into other scientists' work and bring it to life — much like a translator! I particularly love creating infographics, but I also take commissions for logo and icon design.
+> Scientific visual design brought me huge satisfaction. It gave me the opportunity to dive deep into other scientists' work and bring it to life — much like a translator! I particularly love creating infographics, but I also take commissions for logo and icon design.
 
 ::: {#listing-gallery}
 :::
