@@ -3,5 +3,17 @@ title: "&nbsp;"
 
 page_layout: full
 title-block-banner: ../images/cover_art.JPG
+
+listing:
+  id: listing-gallery
+  template: art.ejs
+  contents: 
+    - fine_art/*
+  sort-ui: false
+  filter-ui: false
+  categories: false
+  sort: "path asc"
 ---
 
+::: {#listing-gallery .column-screen-page style="padding: 0 0rem;"}
+:::
