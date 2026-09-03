@@ -1,11 +1,13 @@
 ---
 title: "&nbsp;"
-
-page_layout: full
 title-block-banner: ../images/cover_art.JPG
 
+format:
+  html:
+    page-layout: full
+
 listing:
-  id: listing-gallery
+  id: design_listing
   template: art.ejs
   contents: 
     - design/*
@@ -15,5 +17,9 @@ listing:
   sort: "path asc"
 ---
 
-::: {#listing-gallery .column-screen-page style="padding: 0 0rem;"}
+> Scientific visual design gives me the opportunity to dive deep into other scientists' work and bring it to life — much like a translator! I particularly love creating infographics, but I also take commissions for logo and icon design. Contact me if you are interested in working together. 
+
+![](design_steps.png)
+
+::: {#design_listing .column-screen-page style="padding: 0 0rem;"}
 :::

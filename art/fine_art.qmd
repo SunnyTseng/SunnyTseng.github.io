@@ -1,11 +1,13 @@
 ---
 title: "&nbsp;"
-
-page_layout: full
 title-block-banner: ../images/cover_art.JPG
 
+format:
+  html:
+    page-layout: full
+
 listing:
-  id: listing-gallery
+  id: fine_art_listing
   template: art.ejs
   contents: 
     - fine_art/*
@@ -15,5 +17,8 @@ listing:
   sort: "path asc"
 ---
 
-::: {#listing-gallery .column-screen-page style="padding: 0 0rem;"}
+> Despite the convenience of digital art, I still hold a deep appreciation for traditional media. I enjoy experimenting with different techniques and styles, but I still love best the texture of pencils on paper—the simplest and most powerful medium.
+
+
+::: {#fine_art_listing .column-screen-page style="padding: 0 0rem;"}
 :::
