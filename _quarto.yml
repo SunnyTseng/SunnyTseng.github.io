@@ -3,7 +3,9 @@ project:
 
 website:
   title: "曾奕晴 Sunny Tseng"
+  
   back-to-top-navigation: true
+  
   navbar:
     search: true
     background: light
@@ -34,12 +36,15 @@ website:
       - href: blog.qmd
         text: Blog
         
-      - href: sound.qmd
-        text: Sound
-  
+      - text: Sound
+        menu:
+        - href: sound/bird.qmd
+          text: Bird Recording
+        - href: sound/soundscape.qmd
+          text: Soundscape
         
   page-navigation: true
-  
+
   page-footer: 
     right: "Created with Quarto by Sunny Tseng. Updated 2026 Sep."
 
@@ -55,5 +60,3 @@ lightbox: true
 
 execute:
   freeze: auto
-  
-  

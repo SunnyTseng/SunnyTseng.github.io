@@ -1,0 +1,121 @@
+---
+title: "&nbsp;"
+title-block-banner: ../images/cover_sound.JPG
+
+format:
+  html:
+    page-layout: full
+---
+
+> Welcome to my little wonderland of bird sounds! Field recording brings me deep joy and peace. I’ve captured about 300 species in different corners of the world, but it isn't about counting numbers... listening to these sounds is how I reconnect with my past journeys.
+
+<div class="mb-3">
+  <a href="https://xeno-canto.org/contributor/SPMWIWZKKC" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">
+    <i class="bi bi-soundcloud"></i> Explore complete bird sound collection on Xeno-Canto
+  </a>
+</div>
+
+
+
+
+```{=html}
+<style>
+.bird-map-wrap {
+  max-width: 900px;
+  width: 100%;
+  margin: 2rem auto;
+}
+#bird-map {
+  height: 480px;
+  width: 100%;
+  border-radius: 6px;
+}
+.bird-popup {
+  max-width: 260px;
+}
+.bird-popup img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+.bird-popup h4 {
+  margin: 0 0 0.3rem 0;
+  font-size: 14px;
+}
+.bird-popup p {
+  margin: 0 0 0.5rem 0;
+  font-size: 12px;
+  font-style: italic;
+  color: #555;
+}
+.bird-popup iframe {
+  width: 100%;
+  border: none;
+}
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+
+<div class="bird-map-wrap">
+  <div id="bird-map"></div>
+</div>
+
+<script>
+(function() {
+  // ---- EDIT THIS ARRAY: one entry per recording ----
+  var recordings = [
+    {
+      lat: 24.15,
+      lng: 121.17,
+      species: "Alpine Accentor",
+      story: "Recorded above the cloud line at 2,800m, just after sunrise.",
+      photo: "images/alpine-accentor.jpg",
+      embedUrl: "https://xeno-canto.org/490773/embed?simple=1"
+    },
+    {
+      lat: 23.68,
+      lng: 120.90,
+      species: "Taiwan Barwing",
+      story: "A pair calling back and forth in dense bamboo undergrowth.",
+      photo: "images/taiwan-barwing.jpg",
+      embedUrl: "https://xeno-canto.org/123456/embed?simple=1"
+    }
+    // add more { lat, lng, species, story, photo, embedUrl } objects here
+  ];
+  // ----------------------------------------------------
+
+  var map = L.map('bird-map').setView([recordings[0].lat, recordings[0].lng], 7);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors',
+    maxZoom: 18
+  }).addTo(map);
+
+  var bounds = [];
+
+  recordings.forEach(function(rec) {
+    var popupHtml =
+      '<div class="bird-popup">' +
+        '<img src="' + rec.photo + '" alt="' + rec.species + '">' +
+        '<h4>' + rec.species + '</h4>' +
+        '<p>' + rec.story + '</p>' +
+        '<iframe src="' + rec.embedUrl + '" scrolling="no" frameborder="0" height="115"></iframe>' +
+      '</div>';
+
+    var marker = L.marker([rec.lat, rec.lng]).addTo(map);
+    marker.bindPopup(popupHtml, { maxWidth: 280 });
+    bounds.push([rec.lat, rec.lng]);
+  });
+
+  if (bounds.length > 1) {
+    map.fitBounds(bounds, { padding: [30, 30] });
+  }
+})();
+</script>
+```
+
+
+
+
+
