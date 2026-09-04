@@ -35,17 +35,17 @@ website:
         
       - text: Sound
         menu:
-        - href: sound/bird.qmd
-          text: Bird Recording
         - href: sound/soundscape.qmd
           text: Soundscape
+        - href: sound/bird.qmd
+          text: Bird Recording
       
       - href: blog.qmd
         text: Blog
       
-      # - href: about.qmd
-      #   text: About
-        
+      - href: about.qmd
+        text: About
+  
   page-navigation: true
 
   page-footer: 

@@ -5,4 +5,27 @@ page_layout: full
 title-block-banner: ./images/cover_consulting.jpg
 ---
 
-This is the place to display the services I provide for consulting business
+# R Programming Services
+
+I provide services in **R Workflows** (Data Management & Analysis), **R Package Development**. If you are interested in any of these services, please feel free to [contact me](mailto:sunnyyctseng@gmail.com). 
+
+## Data Management
+
+## 🖥️ R Workflow 
+I specialize in preparing and streamlining data pipelines for complex, large-scale datasets. My services include data cleaning, wrangling, automated analysis, and advanced ecological modeling. I also build automated reproducible summaries using R Markdown and Quarto, as well as interactive R Shiny tools (e.g., [BirdNET validation tool](https://github.com/SunnyTseng/BirdNET_validation)) that translate complex data into accessible information.
+
+As a bioacoustician by training, I am particularly fluent at tackling acoustic datasets, especially those collected via Autonomous Recording Units. I specialize in integrating machine learning pipelines to process audio data and extract meaningful ecological insights (e.g., [Birds Canada ARU analysis project](https://github.com/SunnyTseng/Birds-Canada-ARU-2024)).
+
+
+## 📦 R Package Development
+Building R packages is one of the best ways to make code easily accessible, as internal workflows for a team or broad open-source across a research field. As a developer, my experience includes creating [bbsTaiwan](https://sunnytseng.github.io/bbsTaiwan/) under the rOpenSci Championship program to streamline access to and wrangling of long-term citizen science data, as well as [birdnetTools](https://github.com/birdnet-team/birdnetTools), a specialized package designed to process automated wildlife detection data by seamlessly linking acoustic datasets with the machine learning algorithm BirdNET.
+
+## Shiny Tool / Quarto Documentation
+
+## Data Science Workshop
+
+
+
+# Visual Design Services
+
+Beyond data and programming, I specialize in visual communication for science. My design services range from custom visual assets like icons and logos to complex products like research infographics and graphical abstracts. Check out my design portfolio to see how we can bring scientific stories to life!

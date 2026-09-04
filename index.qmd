@@ -3,28 +3,20 @@ title: "Sunny Tseng, PhD"
 about:
   template: broadside
   image: images/avatar_original.JPG
-  links:
-    - icon: github
-      href: https://github.com/SunnyTseng
-    - icon: mortarboard-fill
-      href: https://scholar.google.com/citations?user=_bHf5NgAAAAJ
-    - icon: linkedin
-      href: https://www.linkedin.com/in/sunnytseng/
+  # links:
+  #   - icon: github
+  #     href: https://github.com/SunnyTseng
+  #   - icon: mortarboard-fill
+  #     href: https://scholar.google.com/citations?user=_bHf5NgAAAAJ
+  #   - icon: linkedin
+  #     href: https://www.linkedin.com/in/sunnytseng/
 ---
 
 **Hello! I am Sunny, an independent ecological consultant and R programmer based in Vancouver, Canada**.
 
 > I earned my PhD in the spring of 2026 and am currently leading international projects, including an acoustic monitoring study in Lithuania (supported by National Geographic and Wildlife Acoustics), and working as a software developer with the BirdNET Team at the Cornell Lab of Ornithology (funded by the R Consortium), all while launching my business as an independent consultant!
 
-
-:::{.column-page}
-哈囉，我是奕晴，來自於一個美麗的熱帶小島 - 臺灣。台大物理系、森林系雙主修畢業後，到加拿大溫哥華就讀碩士班、博士，主要從事鳥類聲學研究，在這些年歲中，於臺灣、加拿大、俄羅斯、立陶宛等世界各地進行研究，收集了三百多種鳥類的鳴唱聲音。曾獲得國家地理頻道 Early Career Grant、加拿大自然科學與工程研究委員會全額研究獎學金。並已在國際期刊發表數篇研究成果。
-
-平時以科學研究為正職，遊走於生態資料科學家、藝術繪圖者、自然書寫者等專業間。同時享受藝術創作、寫作、及野外錄音帶來的生活反思，某種程度上，我認為那更能反映出我所認識的世界。看到水會想跳、看到山會想爬、喜歡抱樹、喜歡一個人靜靜地走路、每天要花一個小時吃早餐。目前定居於加拿大溫哥華，另一個靠海的美麗地方，家門口望向海的方向，就是臺灣。
-:::
+This website serves as a central space for my work and personal passions, from data consulting and research to arts, sound recording, and creative writing. Each aspect reflects a unique part of who I am. You'll find content in both English and Traditional Chinese, a blend that reflects my own multicultural background and identity. To learn more about me, feel free to visit the About page!
 
 
-
-
-[test](about.qmd): This is how to put a link to a website page
-[test2](science/writing.qmd)
+哈囉，我是奕晴，來自於一個美麗的熱帶小島 - 臺灣。目前定居於加拿大溫哥華，另一個靠海的美麗地方。覺得自己很難用單一身分來定義，因此建立了個人網站來整理自己的生活、讓多樣的面相可以有多樣的呈現。在這裡你可以看到我在加拿大擔任的資料生態顧問的創業（Consulting）、自然科學研究（Science）、藝術創作（Art）、野外錄音（Sound）、還有我的部落格（Blog）。如果想認識更多關於我的故事，也可以到關於我（About）頁面逛逛。
