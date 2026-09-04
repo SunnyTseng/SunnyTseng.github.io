@@ -7,13 +7,60 @@ format:
     page-layout: full
 ---
 
-> A full soundscape offers an immersive experience. I find soundscape to be a powerful tool for capturing the overall story and mood of a moment. I also love pairing each recording with a short note reflecting on that time - though what the sound ultimately means differs for each listeners.
+```{=html}
+<style>
+.bird-intro {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  max-width: 900px;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+}
+.bird-intro-text {
+  flex: 1 1 320px;
+}
+.bird-intro-text blockquote {
+  margin: 0 0 1rem 0;
+  font-style: italic;
+  color: #333;
+  border-left: 3px solid #ddd;
+  padding-left: 1rem;
+}
+.bird-intro-photo {
+  flex: 0 0 260px;
+}
+.bird-intro-photo img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+</style>
 
-<div class="mb-3">
+<div class="bird-intro">
+
+  <div class="bird-intro-photo">
+    <img src="soundscape.JPG" alt="Taiwan">
+  </div>
+
+  <div class="bird-intro-text">
+    <blockquote>
+      A full soundscape offers an immersive experience. I find soundscape to be a powerful tool for capturing the overall story and mood of a moment. I also love pairing each recording with a short note reflecting on that time - though what the sound ultimately means differs for each listeners.
+    </blockquote>
+    
+    <div class="mb-3">
   <a href="https://soundcloud.com/sunny-tseng-927964029" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">
     <i class="bi bi-soundcloud"></i> Explore complete soundscape tracks on SoundCloud
   </a>
 </div>
+
+  </div>
+  
+</div>
+
+```
+
+
 
 ```{=html}
 <style>
@@ -77,19 +124,29 @@ format:
   <div class="sc-carousel-viewport">
     <div class="sc-carousel-track">
 
+      <!-- SLIDE 3 -->
+      <div class="sc-carousel-slide">
+<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A955731034&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/sunny-tseng-927964029" title="Sunny Tseng" target="_blank" style="color: #cccccc; text-decoration: none;">Sunny Tseng</a> · <a href="https://soundcloud.com/sunny-tseng-927964029/x2tgox0wbvhs" title="冰凍的湖，是如何傾訴心聲" target="_blank" style="color: #cccccc; text-decoration: none;">冰凍的湖，是如何傾訴心聲</a></div>
+      </div>
+
       <!-- SLIDE 1 — replace src with your own track's embed URL -->
       <div class="sc-carousel-slide">
         <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1045428847&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/sunny-tseng-927964029" title="Sunny Tseng" target="_blank" style="color: #cccccc; text-decoration: none;">Sunny Tseng</a> · <a href="https://soundcloud.com/sunny-tseng-927964029/mr4wjsrrgcmb" title="熱帶島嶼的高山貓" target="_blank" style="color: #cccccc; text-decoration: none;">熱帶島嶼的高山貓</a></div>
+      </div>
+
+      <!-- SLIDE 5 -->
+      <div class="sc-carousel-slide">
+<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1273425085&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/sunny-tseng-927964029" title="Sunny Tseng" target="_blank" style="color: #cccccc; text-decoration: none;">Sunny Tseng</a> · <a href="https://soundcloud.com/sunny-tseng-927964029/vancouver_island" title="釣聲音的人" target="_blank" style="color: #cccccc; text-decoration: none;">釣聲音的人</a></div>
       </div>
 
       <!-- SLIDE 2 -->
       <div class="sc-carousel-slide">
         <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A988703518&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/sunny-tseng-927964029" title="Sunny Tseng" target="_blank" style="color: #cccccc; text-decoration: none;">Sunny Tseng</a> · <a href="https://soundcloud.com/sunny-tseng-927964029/zosleerab9mz" title="北方．潛鳥" target="_blank" style="color: #cccccc; text-decoration: none;">北方．潛鳥</a></div>
       </div>
-
-      <!-- SLIDE 3 -->
+      
+            <!-- SLIDE 6 -->
       <div class="sc-carousel-slide">
-<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A955731034&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/sunny-tseng-927964029" title="Sunny Tseng" target="_blank" style="color: #cccccc; text-decoration: none;">Sunny Tseng</a> · <a href="https://soundcloud.com/sunny-tseng-927964029/x2tgox0wbvhs" title="冰凍的湖，是如何傾訴心聲" target="_blank" style="color: #cccccc; text-decoration: none;">冰凍的湖，是如何傾訴心聲</a></div>
+<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A808254226&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/sunny-tseng-927964029" title="Sunny Tseng" target="_blank" style="color: #cccccc; text-decoration: none;">Sunny Tseng</a> · <a href="https://soundcloud.com/sunny-tseng-927964029/orchid-island" title="Orchid Island – 蘭嶼與海" target="_blank" style="color: #cccccc; text-decoration: none;">Orchid Island – 蘭嶼與海</a></div>
       </div>
 
       <!-- SLIDE 4 -->
@@ -97,17 +154,6 @@ format:
 <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A372065801&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/sunny-tseng-927964029" title="Sunny Tseng" target="_blank" style="color: #cccccc; text-decoration: none;">Sunny Tseng</a> · <a href="https://soundcloud.com/sunny-tseng-927964029/yellow-billed-loon-gavia-adamsii" title="七段聲音的故事--白嘴潛鳥" target="_blank" style="color: #cccccc; text-decoration: none;">七段聲音的故事--白嘴潛鳥</a></div>
       </div>
       
-      <!-- SLIDE 5 -->
-      <div class="sc-carousel-slide">
-<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1273425085&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/sunny-tseng-927964029" title="Sunny Tseng" target="_blank" style="color: #cccccc; text-decoration: none;">Sunny Tseng</a> · <a href="https://soundcloud.com/sunny-tseng-927964029/vancouver_island" title="釣聲音的人" target="_blank" style="color: #cccccc; text-decoration: none;">釣聲音的人</a></div>
-      </div>
-      
-      <!-- SLIDE 6 -->
-      <div class="sc-carousel-slide">
-<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A808254226&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/sunny-tseng-927964029" title="Sunny Tseng" target="_blank" style="color: #cccccc; text-decoration: none;">Sunny Tseng</a> · <a href="https://soundcloud.com/sunny-tseng-927964029/orchid-island" title="Orchid Island – 蘭嶼與海" target="_blank" style="color: #cccccc; text-decoration: none;">Orchid Island – 蘭嶼與海</a></div>
-      </div>
-      
-      <!-- Add SLIDE 4, 5, 6 the same way -->
 
     </div>
   </div>

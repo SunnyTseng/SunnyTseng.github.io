@@ -1,0 +1,8 @@
+---
+title: "&nbsp;"
+
+page_layout: full
+title-block-banner: ./images/cover_consulting.jpg
+---
+
+This is the place to display the services I provide for consulting business

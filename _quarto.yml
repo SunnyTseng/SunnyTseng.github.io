@@ -11,11 +11,11 @@ website:
     background: light
     foreground: secondary
     right:
-      - href: index.qmd
-        text: Home
+      # - href: index.qmd
+      #   text: Home
         
-      - href: about.qmd
-        text: About
+      - href: consulting.qmd
+        text: Consulting
         
       - text: Science
         menu: 
@@ -32,9 +32,6 @@ website:
           text: Infographic Design
         - href: art/fine_art.qmd
           text: Fine Art
-          
-      - href: blog.qmd
-        text: Blog
         
       - text: Sound
         menu:
@@ -42,6 +39,12 @@ website:
           text: Bird Recording
         - href: sound/soundscape.qmd
           text: Soundscape
+      
+      - href: blog.qmd
+        text: Blog
+      
+      # - href: about.qmd
+      #   text: About
         
   page-navigation: true
 

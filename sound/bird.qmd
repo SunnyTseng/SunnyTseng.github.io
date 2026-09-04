@@ -7,13 +7,57 @@ format:
     page-layout: full
 ---
 
-> Welcome to my little wonderland of bird sounds! Field recording brings me deep joy and peace. I’ve captured about 300 species in different corners of the world, but it isn't about counting numbers... listening to these sounds is how I reconnect with my past journeys.
+```{=html}
+<style>
+.bird-intro {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  max-width: 900px;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+}
+.bird-intro-text {
+  flex: 1 1 320px;
+}
+.bird-intro-text blockquote {
+  margin: 0 0 1rem 0;
+  font-style: italic;
+  color: #333;
+  border-left: 3px solid #ddd;
+  padding-left: 1rem;
+}
+.bird-intro-photo {
+  flex: 0 0 260px;
+}
+.bird-intro-photo img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+</style>
 
-<div class="mb-3">
-  <a href="https://xeno-canto.org/contributor/SPMWIWZKKC" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">
-    <i class="bi bi-soundcloud"></i> Explore complete bird sound collection on Xeno-Canto
-  </a>
+<div class="bird-intro">
+
+  <div class="bird-intro-photo">
+    <img src="bird.JPG" alt="Taiwan">
+  </div>
+
+  <div class="bird-intro-text">
+    <blockquote>
+      Welcome to my little wonderland of bird sounds! Field recording brings me deep joy and peace. I've captured about 300 species in different corners of the world, but it isn't about counting numbers... listening to these sounds is how I reconnect with my past journeys.
+    </blockquote>
+    <div class="mb-3">
+      <a href="https://xeno-canto.org/contributor/SPMWIWZKKC" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">
+        <i class="bi bi-soundcloud"></i> Explore complete bird sound collection on Xeno-Canto
+      </a>
+    </div>
+  </div>
+  
 </div>
+
+```
+
 
 
 
@@ -31,25 +75,9 @@ format:
   border-radius: 6px;
 }
 .bird-popup {
-  max-width: 260px;
-}
-.bird-popup img {
-  width: 100%;
-  border-radius: 4px;
-  margin-bottom: 0.5rem;
-}
-.bird-popup h4 {
-  margin: 0 0 0.3rem 0;
-  font-size: 14px;
-}
-.bird-popup p {
-  margin: 0 0 0.5rem 0;
-  font-size: 12px;
-  font-style: italic;
-  color: #555;
+  max-width: 360px;
 }
 .bird-popup iframe {
-  width: 100%;
   border: none;
 }
 </style>
@@ -57,31 +85,31 @@ format:
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 
-<div class="bird-map-wrap">
+
+<figure class="bird-map-wrap">
   <div id="bird-map"></div>
-</div>
+  <figcaption style="font-size: 0.85rem; color: #666; margin-top: 0.5rem; text-align: left;">
+    Here are a few selected recordings from the locations I've recorded. My main recording hubs are in Taiwan, Canada, and Lithuania.
+  </figcaption>
+</figure>
+
+
 
 <script>
 (function() {
   // ---- EDIT THIS ARRAY: one entry per recording ----
   var recordings = [
-    {
-      lat: 24.15,
-      lng: 121.17,
-      species: "Alpine Accentor",
-      story: "Recorded above the cloud line at 2,800m, just after sunrise.",
-      photo: "images/alpine-accentor.jpg",
-      embedUrl: "https://xeno-canto.org/490773/embed?simple=1"
-    },
-    {
-      lat: 23.68,
-      lng: 120.90,
-      species: "Taiwan Barwing",
-      story: "A pair calling back and forth in dense bamboo undergrowth.",
-      photo: "images/taiwan-barwing.jpg",
-      embedUrl: "https://xeno-canto.org/123456/embed?simple=1"
-    }
-    // add more { lat, lng, species, story, photo, embedUrl } objects here
+    { lat: 70.9409, lng: 147.9749, embedUrl: "https://xeno-canto.org/396665/embed" },
+    { lat: 62.1143, lng: 129.6997, embedUrl: "https://xeno-canto.org/396615/embed" },
+    { lat: 49.2931, lng: -122.3445, embedUrl: "https://xeno-canto.org/490772/embed" },
+    { lat: 51.3142, lng: -121.8012, embedUrl: "https://xeno-canto.org/479757/embed" },
+    { lat: 54.6692, lng: -124.4144, embedUrl: "https://xeno-canto.org/911367/embed" },
+    { lat: 25.0914, lng: 121.7553, embedUrl: "https://xeno-canto.org/538717/embed" },
+    { lat: 24.3447, lng: 121.3046, embedUrl: "https://xeno-canto.org/523476/embed" },
+    { lat: 35.7664, lng: 139.6295, embedUrl: "https://xeno-canto.org/767536/embed" },
+    { lat: -38.5109, lng: 145.1501, embedUrl: "https://xeno-canto.org/871676/embed" },
+    { lat: 55.5188, lng: 21.1118, embedUrl: "https://xeno-canto.org/1152643/embed" },
+    { lat: 54.8387, lng: 25.4469, embedUrl: "https://xeno-canto.org/1150378/embed" }
   ];
   // ----------------------------------------------------
 
@@ -95,18 +123,15 @@ format:
   var bounds = [];
 
   recordings.forEach(function(rec) {
-    var popupHtml =
-      '<div class="bird-popup">' +
-        '<img src="' + rec.photo + '" alt="' + rec.species + '">' +
-        '<h4>' + rec.species + '</h4>' +
-        '<p>' + rec.story + '</p>' +
-        '<iframe src="' + rec.embedUrl + '" scrolling="no" frameborder="0" height="115"></iframe>' +
-      '</div>';
+  var popupHtml =
+    '<div class="bird-popup">' +
+      '<iframe src="' + rec.embedUrl + '" scrolling="no" frameborder="0" width="340" height="220"></iframe>' +
+    '</div>';
 
-    var marker = L.marker([rec.lat, rec.lng]).addTo(map);
-    marker.bindPopup(popupHtml, { maxWidth: 280 });
-    bounds.push([rec.lat, rec.lng]);
-  });
+  var marker = L.marker([rec.lat, rec.lng]).addTo(map);
+  marker.bindPopup(popupHtml, { minWidth: 340, maxWidth: 360 });
+  bounds.push([rec.lat, rec.lng]);
+});
 
   if (bounds.length > 1) {
     map.fitBounds(bounds, { padding: [30, 30] });
