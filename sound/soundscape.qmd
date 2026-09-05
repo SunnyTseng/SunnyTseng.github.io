@@ -40,7 +40,7 @@ format:
 <div class="bird-intro">
 
   <div class="bird-intro-photo">
-    <img src="soundscape.JPG" alt="Taiwan">
+    <img src="./soundscape.JPG" alt="Taiwan">
   </div>
 
   <div class="bird-intro-text">
