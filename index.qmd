@@ -3,13 +3,6 @@ title: "Sunny Tseng, PhD"
 about:
   template: broadside
   image: images/avatar_original.JPG
-  # links:
-  #   - icon: github
-  #     href: https://github.com/SunnyTseng
-  #   - icon: mortarboard-fill
-  #     href: https://scholar.google.com/citations?user=_bHf5NgAAAAJ
-  #   - icon: linkedin
-  #     href: https://www.linkedin.com/in/sunnytseng/
 ---
 
 **Hello! I am Sunny, an independent ecological consultant and R programmer based in Vancouver, Canada**.
