@@ -22,6 +22,8 @@ website:
         menu: 
         - href: science/writing.qmd
           text: Popular Science Writing
+        - href: science/publication.qmd
+          text: Publication
         - href: science/project.qmd
           text: Research Project
         - href: science/academic.qmd
