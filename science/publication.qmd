@@ -9,22 +9,25 @@ toc: false
 
 ## Peer-reviewed Publications
 
-<script src="https://bibbase.org/show?bib=https%3A%2F%2Fbibbase.org%2Fnetwork%2Ffiles%2FSJQE7dCknx4jamHbb&noBootstrap=1&jsonp=1&authorFirst=1&noTitleLinks=true"></script>
+<script src="https://bibbase.org/show?bib=https%3A%2F%2Fraw.githubusercontent.com%2FSunnyTseng%2FSunnyTseng.github.io%2Fmaster%2Fscience%2Fpublication.bib&commas=true&noBootstrap=1&jsonp=1&authorFirst=1&noTitleLinks=true"></script>
 
 <!-- 
 add:
 authorFirst=1
-owner=
 noTitleLinks=true
-
+owner=
 -->
-
 
 ## Under Review
 
+- **Tseng, S.**, D. Hodder, and K.A. Otter. 2026. **Passive acoustic monitoring reveals seasonal and habitat-related patterns in bird vocal activity** [Journal of Wildlife Management](https://wildlife.onlinelibrary.wiley.com/journal/19372817) (Under Review)
+
+- **Tseng, S.** and S. Kahl. 2026. **birdnetTools: An R package for working with BirdNET output** [Journal of Open Source Software](https://joss.theoj.org/) (Under Review)
+
+
+
 
 ## Software Development
-
 
 - **birdnetTools** (2025) - R package for post-processing, visualizatino, and validation of BirdNET output. Developed in collaboration with the BirdNET team. Available on GitHub. ([Documentation](https://birdnet-team.github.io/birdnetTools/))
 
