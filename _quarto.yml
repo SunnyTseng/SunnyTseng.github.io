@@ -7,6 +7,11 @@ project:
 
 
 
+
+
+
+
+
 website:
   title: "曾奕晴 Sunny Tseng"
   
@@ -38,13 +43,13 @@ website:
         - href: science/project.qmd
           text: Research Project
           
-        - href: science/academic.qmd
+        - href: science/cv.qmd
           text: Academic CV
 
       - text: Art
         menu:
         - href: art/design.qmd
-          text: Infographic Design
+          text: Scientific Visual Design
           
         - href: art/fine_art.qmd
           text: Fine Art

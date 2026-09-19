@@ -1,0 +1,20 @@
+---
+title: "&nbsp;"
+
+page_layout: full
+title-block-banner: ../images/cover_science.JPG
+
+toc: false
+---
+
+# Academic CV
+
+<div class="mb-3">
+  <a href="article.pdf" target="_blank" class="btn btn-outline-primary btn-sm">
+    <i class="bi bi-arrows-fullscreen"></i> Open full screen / new tab
+  </a>
+</div>
+
+<object data="cv/CV_Sunny.pdf" type="application/pdf" width="100%" height="800px">
+  <iframe src="cv/CV_Sunny.pdf" width="100%" height="800px" style="border: none;"></iframe>
+</object>

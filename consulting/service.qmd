@@ -23,7 +23,7 @@ Building R packages is one of the best ways to make code accessible and reusable
 
 ## Shiny tools, quarto & R markdown 📊
 
-R Markdown and Quarto are powerful tools for turning data into clear, well-organized reports, while Shiny tools and Quarto dashboards make that data interactive — letting stakeholders explore and engage with results directly. I build documentation, dashboards, and interactive Shiny tools to help your team communicate data more clearly and make it easier for others to engage with.
+R Markdown and Quarto are powerful tools for turning data into clear, well-organized reports, while Shiny tools and Quarto dashboards make that data interactive — letting stakeholders explore and engage with results directly. I build documentation, dashboards, and interactive Shiny tools to help your team communicate data more clearly and make it easier for others to engage with. BTW, this website was created by Quarto!
 
 
 ## Workshop & tutorial 🏫

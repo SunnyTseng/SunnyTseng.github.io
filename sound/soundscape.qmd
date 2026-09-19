@@ -5,7 +5,9 @@ title-block-banner: ../images/cover_sound.JPG
 format:
   html:
     page-layout: full
+
 ---
+
 
 ```{=html}
 <style>
@@ -44,9 +46,8 @@ format:
   </div>
 
   <div class="bird-intro-text">
-    <blockquote>
-      A full soundscape offers an immersive experience. I find soundscape to be a powerful tool for capturing the overall story and mood of a moment. I also love pairing each recording with a short note reflecting on that time - though what the sound ultimately means differs for each listeners.
-    </blockquote>
+
+      I enjoy collecting soundscapes as it offers an immersive experience. I find soundscape to be a powerful tool for storytelling and conveying mood of a moment. I also love pairing each recording with a short note reflecting on that time - though what the sound ultimately means differs for each listeners.
     
     <div class="mb-3">
   <a href="https://soundcloud.com/sunny-tseng-927964029" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">

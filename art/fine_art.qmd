@@ -15,9 +15,13 @@ listing:
   filter-ui: false
   categories: false
   sort: "path asc"
+  
+toc: false
 ---
 
-> Despite the convenience of digital art, I still hold a deep appreciation for traditional media. I enjoy experimenting with different techniques and styles, but I still love best the texture of pencils on paper—the simplest and most powerful medium.
+# Fine Art
+
+Despite the convenience of digital art, I still hold a deep appreciation for traditional media. I enjoy experimenting with different techniques and styles, but I still love best the texture of pencils on paper—the simplest and most powerful medium.
 
 
 ::: {#fine_art_listing .column-screen-page style="padding: 0 0rem;"}
