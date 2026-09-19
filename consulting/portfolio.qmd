@@ -11,39 +11,76 @@ A selection of past projects showcasing my work in data pipelines, R package dev
 
 ## Data pipelines & management 🎓
 
--   Barbara
 
--   Shiao
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
 
-**Birds Canada** <span style="float:right;"> Sep.2024 - present <span> <br> Process field collected ARU data through BirdNET
+library(readr)
+library(dplyr)
+library(knitr)
 
-**Endemic Species Research Institute** <span style="float:right;"> Apr.2020 - Jul.2021 <span> <br> Field bird survey & eBird citizen science data analysis
+pipeline <- read_csv("portfolio_pipeline.csv", show_col_types = FALSE)
 
-**Birds Canada** <span style="float:right;"> Feb.2020 - Mar.2020 <span> <br> Digitalize historical BC bird survey data
+pipeline %>%
+  arrange(desc(start_date)) %>%
+  mutate(start_date_parsed = as.Date(paste0(start_date, "-01")),
+         start_fmt = format(start_date_parsed, "%b %Y"),
+         
+         end_date_str = ifelse(is.na(end_date), NA_character_, paste0(end_date, "-01")),
+         end_date_parsed = as.Date(end_date_str),
+         end_fmt = format(end_date_parsed, "%b %Y"),
+         
+         Date = if_else(!is.na(end_date_parsed), 
+                        paste0(start_fmt, " – ", end_fmt), 
+                        paste0(start_fmt, " - Present")),
+         
+         Details = paste0("**", title, "** <br> ", host, " - ", institution, " <br> ", location)) %>%
+  
+  select(Date, Details) %>%
+  kable(escape = FALSE, 
+        col.names = c("", ""))
+```
+
+
 
 ## R package development 📦
 
--   **birdnetTools** (2025 - present) - Creater / Maintainer - R package for post-processing, visualizatino, and validation of BirdNET output. Developed in collaboration with the BirdNET team. Available on GitHub. ([Documentation](https://birdnet-team.github.io/birdnetTools/))
+-   **birdnetTools** (2025 - present) - **Creater / Maintainer** - R package for post-processing, visualizatino, and validation of BirdNET output. Developed in collaboration with the BirdNET team. Available on GitHub. ([Documentation](https://birdnet-team.github.io/birdnetTools/))
 
--   **bbsTaiwan** (2024 - present) - Creater / Maintainer - R package for accessing and analyzing Taiwan Breeding Bird Survey (BBS) data. Developed for national biodiversity research and public engagement. Available on GitHub. ([Documentation](https://sunnytseng.github.io/bbsTaiwan/))
+-   **bbsTaiwan** (2024 - present) - **Creater / Maintainer** - R package for accessing and analyzing Taiwan Breeding Bird Survey (BBS) data. Developed for national biodiversity research and public engagement. Available on GitHub. ([Documentation](https://sunnytseng.github.io/bbsTaiwan/))
 
-## Shiny tools, quarto & R markdown 📊
 
-BirdNET R Shiny app
 
-## Data science workshop & tutorial 🏫
+## Workshop & tutorial 🏫
 
-| Date | Details |
-|-----------------|-------------------------------------------------------|
-| Feb.2026 | **Introduction to Git & Github** (instructor); Library graduate student workshop development program (University of Northern British Columbia) |
-| Aug.2025 | **BirdNET workshop** (co-instructor, with Jenn Foote); SCO-SOC annual conference (University of Saskatoon) |
-| Mar.2023 | **Qualitative Analysis using R** (instructor); Jennifer Wigglesworth (University of Northern British Columbia) |
-| Nov.2022 | **Introduction to Git and Github** (instructor); Applied Analysis Hub (University of Northern British Columbia) |
-| Mar.2022 | **Data Wrangling with R** (instructor); Applied Analysis Hub (University of Northern British Columbia) |
-| May.2021 -- Jul.2021 | **Data Wrangling with R, 4 sessions** (instructor); Jerome Ko (Endemic Species Research Institute) |
-| Dec.2020 -- Mar.2021 | **Recording Techniques for Breeding Birds Survey, 6 sessions** (instructor); Luna Fan (Endemic Species Research Institute) |
-| Oct.2018 | **Automatic bird sound detection: ARU data analysis** (instructor); Kathy Martin (Canadian Wildlife Service) |
-| Jan.2018 -- Apr.2018 | **Statistical Analysis in Ecology, 5 sessions** (instructor); Trevor Gareth Jones (University of British Columbia) |
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+library(readr)
+library(dplyr)
+library(knitr)
+
+workshops <- read_csv("portfolio_workshop.csv", show_col_types = FALSE)
+
+workshops %>%
+  arrange(desc(date)) %>%
+  mutate(
+    start_date_parsed = as.Date(paste0(date, "-01")),
+    end_date_str = ifelse(is.na(end_date), NA_character_, paste0(end_date, "-01")),
+    end_date_parsed = as.Date(end_date_str),
+    start_fmt = format(start_date_parsed, "%b %Y"),
+    end_fmt = format(end_date_parsed, "%b %Y"),
+    Date = if_else(!is.na(end_date_parsed), paste0(start_fmt, " – ", end_fmt), start_fmt),
+    Details = paste0("**", title, "** (", role, ") <br> ", host, " (", institution, ")")) %>%
+  select(Date, Details) %>%
+  kable(escape = FALSE, 
+        col.names = c("", ""))
+```
+
 
 ## Code review & troubleshooting 💬
 

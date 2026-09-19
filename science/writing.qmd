@@ -9,6 +9,10 @@ listing:
   type: grid # Renders a visual card layout
   sort: "date desc"
   categories: true
+  
+toc: false
 ---
 
-> I love writing popular science articles to share the joy and discoveries of being a scientist. I mostly write in Traditional Chinese for readers in Taiwan, but I also write in English from time to time for Canadian magazines.
+# Popular Science Writing
+
+I love writing popular science articles to share the joy and discoveries of being a scientist. I mostly write in Traditional Chinese for readers in Taiwan, but I also write in English from time to time for Canadian magazines.
