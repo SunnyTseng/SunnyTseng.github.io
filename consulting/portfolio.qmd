@@ -33,7 +33,7 @@ BirdNET R Shiny app
 
 ## Data science workshop & tutorial 🏫
 
-| Date | Workshop |
+| Date | Details |
 |-----------------|-------------------------------------------------------|
 | Feb.2026 | **Introduction to Git & Github** (instructor); Library graduate student workshop development program (University of Northern British Columbia) |
 | Aug.2025 | **BirdNET workshop** (co-instructor, with Jenn Foote); SCO-SOC annual conference (University of Saskatoon) |
