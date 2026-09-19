@@ -1,0 +1,44 @@
+---
+title: "&nbsp;"
+
+page_layout: full
+title-block-banner: ../images/cover_consulting.JPG
+---
+
+
+# Services
+
+I provide services broadly in data science, R programming, and ecological data analysis. If you're interested in any of these, please feel free to [contact me](../about.qmd).
+
+
+## Data pipelines & management 🎓
+
+I specialize in preparing and streamlining data pipelines for complex, large-scale datasets, especially ecological data such as audio, video, and imagery. My services include data cleaning, wrangling, automated analysis, and advanced ecological modelling — components that can, but don't need to, feed into a scientific manuscript. I also help put organizational datasets in order and set up GitHub organization pages, so your team can manage and share data long after the project ends.
+
+
+## R package development 📦
+
+Building R packages is one of the best ways to make code accessible and reusable — whether as an internal tool for your team, or an open-source solution for the broader research community. I offer package development from scratch, as well as improving or co-developing existing packages.
+
+
+## Shiny tools, quarto & R markdown 📊
+
+R Markdown and Quarto are powerful tools for turning data into clear, well-organized reports, while Shiny tools and Quarto dashboards make that data interactive — letting stakeholders explore and engage with results directly. I build documentation, dashboards, and interactive Shiny tools to help your team communicate data more clearly and make it easier for others to engage with.
+
+
+## Data science workshop & tutorial 🏫
+
+I take pride in teaching — it's a valuable opportunity to share knowledge and help make data science and R programming more accessible to researchers and students. I offer workshops on data wrangling with tidyverse, data visualization with ggplot2, and ecological modelling in R, as well as topics like data management, Git & GitHub, reproducible coding, and R package development.
+
+
+## Code review & troubleshooting 💬
+
+Already comfortable in R but stuck on a specific bug, workflow decision, or analysis approach? I offer one-on-one sessions to review code, troubleshoot problems, and help you get unstuck — a lower-commitment option for when you don't need a full project, just a second pair of eyes.
+
+---
+
+Looking for something different? I also take on [scientific illustration](../art/design.qmd) projects — graphical abstracts, infographics, and custom visual assets for research communication. Check it out!
+
+
+
+

@@ -1,0 +1,50 @@
+---
+title: "&nbsp;"
+
+page_layout: full
+title-block-banner: ../images/cover_consulting.JPG
+---
+
+# Portfolio
+
+A selection of past projects showcasing my work in data pipelines, R package development, etc. If you'd like to discuss a similar project, feel free to [contact me](../about.qmd).
+
+## Data pipelines & management 🎓
+
+-   Barbara
+
+-   Shiao
+
+**Birds Canada** <span style="float:right;"> Sep.2024 - present <span> <br> Process field collected ARU data through BirdNET
+
+**Endemic Species Research Institute** <span style="float:right;"> Apr.2020 - Jul.2021 <span> <br> Field bird survey & eBird citizen science data analysis
+
+**Birds Canada** <span style="float:right;"> Feb.2020 - Mar.2020 <span> <br> Digitalize historical BC bird survey data
+
+## R package development 📦
+
+-   **birdnetTools** (2025 - present) - Creater / Maintainer - R package for post-processing, visualizatino, and validation of BirdNET output. Developed in collaboration with the BirdNET team. Available on GitHub. ([Documentation](https://birdnet-team.github.io/birdnetTools/))
+
+-   **bbsTaiwan** (2024 - present) - Creater / Maintainer - R package for accessing and analyzing Taiwan Breeding Bird Survey (BBS) data. Developed for national biodiversity research and public engagement. Available on GitHub. ([Documentation](https://sunnytseng.github.io/bbsTaiwan/))
+
+## Shiny tools, quarto & R markdown 📊
+
+BirdNET R Shiny app
+
+## Data science workshop & tutorial 🏫
+
+| Date | Workshop |
+|-----------------|-------------------------------------------------------|
+| Feb.2026 | **Introduction to Git & Github** (instructor); Library graduate student workshop development program (University of Northern British Columbia) |
+| Aug.2025 | **BirdNET workshop** (co-instructor, with Jenn Foote); SCO-SOC annual conference (University of Saskatoon) |
+| Mar.2023 | **Qualitative Analysis using R** (instructor); Jennifer Wigglesworth (University of Northern British Columbia) |
+| Nov.2022 | **Introduction to Git and Github** (instructor); Applied Analysis Hub (University of Northern British Columbia) |
+| Mar.2022 | **Data Wrangling with R** (instructor); Applied Analysis Hub (University of Northern British Columbia) |
+| May.2021 -- Jul.2021 | **Data Wrangling with R, 4 sessions** (instructor); Jerome Ko (Endemic Species Research Institute) |
+| Dec.2020 -- Mar.2021 | **Recording Techniques for Breeding Birds Survey, 6 sessions** (instructor); Luna Fan (Endemic Species Research Institute) |
+| Oct.2018 | **Automatic bird sound detection: ARU data analysis** (instructor); Kathy Martin (Canadian Wildlife Service) |
+| Jan.2018 -- Apr.2018 | **Statistical Analysis in Ecology, 5 sessions** (instructor); Trevor Gareth Jones (University of British Columbia) |
+
+## Code review & troubleshooting 💬
+
+During my PhD at the University of Northern British Columbia, I co-founded the [Applied Analysis Hub (AAH)](https://unbcaah.opened.ca/), a research support group providing one-on-one code review and troubleshooting for students and faculty. This gave me extensive experience reviewing code, particularly for graduate students' research projects.

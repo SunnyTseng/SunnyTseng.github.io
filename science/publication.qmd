@@ -20,15 +20,19 @@ owner=
 
 ## Under Review
 
-- **Tseng, S.**, D. Hodder, and K.A. Otter. 2026. **Passive acoustic monitoring reveals seasonal and habitat-related patterns in bird vocal activity** [Journal of Wildlife Management](https://wildlife.onlinelibrary.wiley.com/journal/19372817) (Under Review)
+- **Tseng, S.**, D. Hodder, and K.A. Otter. 2026. **Passive acoustic monitoring reveals seasonal and habitat-related patterns in bird vocal activity** [Journal of Wildlife Management](https://wildlife.onlinelibrary.wiley.com/journal/19372817) 
 
-- **Tseng, S.** and S. Kahl. 2026. **birdnetTools: An R package for working with BirdNET output** [Journal of Open Source Software](https://joss.theoj.org/) (Under Review)
-
-
+- **Tseng, S.** and S. Kahl. 2026. **birdnetTools: An R package for working with BirdNET output** [Journal of Open Source Software](https://joss.theoj.org/)
 
 
-## Software Development
 
-- **birdnetTools** (2025) - R package for post-processing, visualizatino, and validation of BirdNET output. Developed in collaboration with the BirdNET team. Available on GitHub. ([Documentation](https://birdnet-team.github.io/birdnetTools/))
 
-- **bbsTaiwan** (2024) - R package for accessing and analyzing Taiwan Breeding Bird Survey (BBS) data. Developed for national biodiversity research and public engagement. Available on GitHub. ([Documentation](https://sunnytseng.github.io/bbsTaiwan/))
+## In Preparation
+
+- **Tseng, S.**, D. Hodder, and K.A. Otter. **Which method better estimates avian species richness from acoustic data? A comparison of rarefaction curves and multi-species occupancy models**
+
+- **Tseng, S.**, A.-Y. Chang, W.-J. Chen, and J. C.-J. Ko. **Mapping avian altitudinal migration patterns across Taiwan using citizen science data** 
+
+
+
+

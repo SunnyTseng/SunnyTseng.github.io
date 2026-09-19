@@ -1,6 +1,22 @@
 project:
   type: website
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 website:
   title: "曾奕晴 Sunny Tseng"
   
@@ -14,8 +30,12 @@ website:
       # - href: index.qmd
       #   text: Home
         
-      - href: consulting.qmd
-        text: Consulting
+      - text: Consulting
+        menu: 
+        - href: consulting/service.qmd
+          text: Service
+        - href: consulting/portfolio.qmd
+          text: Portfolio
         
       - text: Science
         menu: 
