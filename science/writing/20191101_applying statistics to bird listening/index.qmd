@@ -10,14 +10,8 @@ categories:
   - English
 ---
 
-<a href="article.pdf" target="_blank" class="btn btn-outline-primary btn-sm"> <i class="bi bi-arrows-fullscreen"></i> Open full screen / new tab </a>
+[<i class="bi bi-arrows-fullscreen"></i> Open full screen / new tab](article.pdf){.btn .btn-outline-primary .btn-sm target="_blank"}
 
-[Link to full volume](./article_full.pdf)
+[<i class="bi bi-arrows-fullscreen"></i> Link to full volume](article_full.pdf){.btn .btn-outline-primary .btn-sm target="_blank"}
 
-<object data="article.pdf" type="application/pdf" width="100%" height="800px">
-
-<iframe src="article.pdf" width="100%" height="800px" style="border: none;">
-
-</iframe>
-
-</object>
+<iframe src="article.pdf" width="100%" height="800px" style="border: none;"></iframe>
