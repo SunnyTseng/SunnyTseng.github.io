@@ -1,15 +1,51 @@
 ---
-title: "Sunny Tseng, PhD"
-about:
-  template: broadside
-  image: images/avatar_original.JPG
+title: "&nbsp;"
+
+format:
+  html:
+    page-layout: full
+
+# about:
+#   template: broadside
+#   image: images/profile_front.jpg
+#   image-width: 20em
+  
+toc: false
 ---
 
-**Hello! I am Sunny, an independent ecological consultant and R programmer based in Vancouver, Canada**.
+::: {.grid}
 
-> I earned my PhD in the spring of 2026 and am currently leading international projects, including an acoustic monitoring study in Lithuania (supported by National Geographic and Wildlife Acoustics), and working as a software developer with the BirdNET Team at the Cornell Lab of Ornithology (funded by the R Consortium), all while launching my business as an independent consultant!
+::: {.g-col-12 .g-col-md-4}
+::: {.profile-photo}
+![](images/profile.jpg)
+
+:::
+:::
+
+::: {.g-col-12 .g-col-md-8}
+
+<span style="font-size: 1.5em;">**Sunny Tseng, PhD**</span>
+
+**Hello! This is Sunny, an independent ecological consultant based in Vancouver, Canada**.
 
 This website serves as a central space for my work and personal passions, from data consulting and research to arts, sound recording, and creative writing. Each aspect reflects a unique part of who I am. You'll find content in both English and Traditional Chinese, a blend that reflects my own multicultural background and identity. To learn more about me, feel free to visit the About page!
 
 
 哈囉，我是奕晴，來自於一個美麗的熱帶小島 - 臺灣。目前定居於加拿大溫哥華，另一個靠海的美麗地方。覺得自己很難用單一身分來定義，因此建立了個人網站來整理自己的生活、讓多樣的面相可以有多樣的呈現。在這裡你可以看到我在加拿大擔任的資料生態顧問的創業（Consulting）、自然科學研究（Science）、藝術創作（Art）、野外錄音（Sound）、還有我的部落格（Blog）。如果想認識更多關於我的故事，也可以到關於我（About）頁面逛逛。
+
+:::
+
+:::
+
+
+<!-- ## Media & Interviews -->
+
+<!-- - **[From BirdNET Detections to Ecological Insight: Sunny Tseng on birdnetTools 2.0](https://r-consortium.org/posts/from-birdnet-detections-to-ecological-insight-sunny-tseng-on-birdnettools-2-0/)** — R Consortium Written Interview. Sep 2026. -->
+
+<!-- - **[鳥鳴研究連結台灣與國際　曾奕晴記錄立陶宛聲景緣自巧合](https://www.cna.com.tw/news/aopl/202608250261.aspx)** — CNA News Feature. Aug 2026. -->
+
+<!-- - **[The Siberian Crane: From Taiwan to Tundra](https://www.birdnote.org/listen/podcasts/threatened/tundra)** — *Threatened* BirdNote Podcast Interview. Apr 2026.  -->
+
+<!-- - **[Storytelling: From Taiwan to Siberian Tundra](https://soundcloud.com/sunny-tseng-927964029/storytelling-from-taiwan-to-siberian-tundra)** — Audio Storytelling. Aug 2023.  -->
+
+<!-- - **[每一刻自然之聲　都是滿載故事的音檔——專訪野地錄音師曾奕晴 Sunny](https://canopi.tw/culture-and-lifestyle/sound-recordist-sunny/)** — Canopi (樹冠生活) Feature Interview. Jun 2021.  -->

@@ -1,6 +1,23 @@
 /* css styles */
 
 
+/* for adjusting profile photo */
+.profile-photo {
+  text-align: center;
+}
+
+.profile-photo img {
+  border-radius: 50%;
+  width: 300px;   /* adjust to taste */
+  height: 300px;
+  object-fit: cover;
+}
+
+.profile-photo p:last-child {
+  font-size: 1.3em;
+  margin-top: 0.75em;
+}
+
 /* not showing the BibTex link */
 .bibbase_page {
   display: none !important;

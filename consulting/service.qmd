@@ -37,7 +37,7 @@ Already comfortable in R but stuck on a specific bug, workflow decision, or anal
 
 ---
 
-Looking for something different? I also take on [scientific illustration](../art/design.qmd) projects — graphical abstracts, infographics, and custom visual assets for research communication. [Check it out](../art/design.qmd!
+Looking for something different? I also take on [scientific illustration](../art/design.qmd) projects — graphical abstracts, infographics, and custom visual assets for research communication. [Check it out](../art/design.qmd)!
 
 
 

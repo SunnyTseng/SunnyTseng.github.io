@@ -5,13 +5,6 @@ project:
 
 
 
-
-
-
-
-
-
-
 website:
   title: "曾奕晴 Sunny Tseng"
   
@@ -21,9 +14,12 @@ website:
     search: true
     background: light
     foreground: secondary
+    left:
+      - href: index.qmd
+        icon: house-door
+        text: " "
+    
     right:
-      # - href: index.qmd
-      #   text: Home
         
       - text: Consulting
         menu: 
@@ -40,11 +36,14 @@ website:
         - href: science/writing.qmd
           text: Popular Science Writing
           
-        - href: science/project.qmd
-          text: Research Project
+        # - href: science/project.qmd
+        #   text: Research Project
           
         - href: science/cv.qmd
           text: Academic CV
+          
+        # - href: science/academic.qmd
+        #   text: Academic CV (markdown)
 
       - text: Art
         menu:
