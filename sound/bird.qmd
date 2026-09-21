@@ -2,64 +2,21 @@
 title: "&nbsp;"
 title-block-banner: ../images/cover_sound.JPG
 
-format:
-  html:
-    page-layout: full
 ---
 
+::: {.grid}
 
-```{=html}
-<style>
-.bird-intro {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-  max-width: 900px;
-  margin: 2rem auto;
-  flex-wrap: wrap;
-}
-.bird-intro-text {
-  flex: 1 1 320px;
-}
-.bird-intro-text blockquote {
-  margin: 0 0 1rem 0;
-  font-style: italic;
-  color: #333;
-  border-left: 3px solid #ddd;
-  padding-left: 1rem;
-}
-.bird-intro-photo {
-  flex: 0 0 260px;
-}
-.bird-intro-photo img {
-  width: 100%;
-  border-radius: 8px;
-  display: block;
-}
-</style>
+::: {.g-col-12 .g-col-md-4}
+![](bird.jpg){.rounded fig-alt="Taiwan"}
+:::
 
-<div class="bird-intro">
+::: {.g-col-12 .g-col-md-8}
+Welcome to my little wonderland of bird sounds! Field recording brings me deep joy and peace, especially when I was chasing the birds! I've captured about 300 species in various corners of the world, but it isn't about counting numbers... listening to these sounds is how I reconnect with my past journeys.
 
-  <div class="bird-intro-photo">
-    <img src="bird.jpg" alt="Taiwan">
-  </div>
+[<i class="bi bi-soundcloud"></i> Explore complete bird sound collection on Xeno-Canto](https://xeno-canto.org/contributor/SPMWIWZKKC){.btn .btn-outline-primary .btn-sm target="_blank" rel="noopener noreferrer"}
+:::
 
-  <div class="bird-intro-text">
-
-      Welcome to my little wonderland of bird sounds! Field recording brings me deep joy and peace, especially when I was chasing the birds! I've captured about 300 species in various corners of the world, but it isn't about counting numbers... listening to these sounds is how I reconnect with my past journeys.
-      
-
-    <div class="mb-3">
-      <a href="https://xeno-canto.org/contributor/SPMWIWZKKC" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">
-        <i class="bi bi-soundcloud"></i> Explore complete bird sound collection on Xeno-Canto
-      </a>
-    </div>
-  </div>
-  
-</div>
-
-```
-
+:::
 
 
 
