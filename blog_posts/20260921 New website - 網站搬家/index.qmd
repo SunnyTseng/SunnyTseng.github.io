@@ -1,0 +1,35 @@
+---
+title: 網站搬新家 R blogdown to Quarto
+description: A short note to transfer from R blogdown to Quarto
+
+author: Sunny Tseng
+date: 2026-09-17
+#image: featured.JPG
+
+categories: 
+  - Canada
+  - programming
+  
+draft: true
+---
+
+新的網站就在剛剛，熱騰騰的正式上線啦!
+
+好啦，其實已經上線很久了，不過是今天才終於把網站連到主要的 Domain。舊的網站是用 blogdown 建立的，當初建的時候，是在 PG 吧，
+
+## Website Builder
+
+## Hosting
+
+## Content
+
+- listing
+- graphic
+- bibtex
+- about
+
+## Domain 
+
+## Email
+
+

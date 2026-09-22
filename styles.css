@@ -1,6 +1,29 @@
 /* css styles */
 
 
+/* about page flexible */
+.profile-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.profile-columns .column {
+  flex: 1 1 auto;
+}
+
+@media (max-width: 600px) {
+  .profile-columns {
+    flex-direction: column-reverse; /* photo on top, text below on mobile */
+  }
+
+  .profile-columns .column {
+    width: 100% !important; /* overrides the inline width="65%"/"35%" */
+    flex: 1 1 100%;
+  }
+}
+
 /* for adjusting profile photo */
 .profile-photo {
   text-align: center;

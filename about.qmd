@@ -20,7 +20,7 @@ toc: false
 
 ## Sunny Tseng, PhD
 
-::::: columns
+::::: {.columns .profile-columns}
 ::: {.column width="65%"}
 -   **Email:** [sunnyyctseng\@gmail.com](mailto:sunnyyctseng@gmail.com)
 -   **GitHub:** [github.com/SunnyTseng](https://github.com/SunnyTseng)
@@ -34,6 +34,7 @@ toc: false
 ![](images/profile.JPG){.rounded width="100%"}
 :::
 :::::
+
 
 ## About me 關於我
 
