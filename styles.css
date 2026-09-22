@@ -1,5 +1,108 @@
 /* css styles */
 
+/* Photo credit caption under an image */
+.photo-credit {
+  display: block;
+  font-size: 0.8rem;
+  color: #9a9a92;
+  margin-top: 0.3rem;
+}
+
+/* ---- Collaborations page: single-column row list ---- */
+ 
+.collab-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-top: 1.5rem;
+}
+ 
+.collab-row {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 1rem 1.25rem;
+  background: #fafaf8;              /* light, warm off-white */
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 0.75rem;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+ 
+.collab-row:hover {
+  background: #f3f2ee;
+  transform: translateY(-1px);
+}
+ 
+/* Icon avatar — swap this for <img class="collab-icon"> once you have
+   a real thumbnail (app icon, cover art, video thumbnail, etc.) */
+.collab-icon {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #eef0ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+ 
+/* Use this class instead of .collab-icon when you have a real photo */
+img.collab-icon {
+  object-fit: cover;
+  font-size: 0; /* hide alt text if broken */
+}
+ 
+.collab-body {
+  flex: 1;
+  min-width: 0; /* allow text truncation/wrap inside flex */
+}
+ 
+.collab-meta {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #9a9a92;
+  margin-bottom: 0.2rem;
+}
+ 
+.collab-title {
+  display: block;
+  font-size: 1.05rem;
+  line-height: 1.3;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 0.15rem;
+}
+ 
+.collab-title:hover {
+  text-decoration: underline;
+}
+ 
+.collab-body > p:last-child {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6b6b63;
+}
+ 
+ 
+/* Mobile: shrink the avatar and tighten padding */
+@media (max-width: 600px) {
+  .collab-row {
+    padding: 0.85rem 1rem;
+    gap: 0.85rem;
+  }
+  .collab-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
+  }
+  .collab-title {
+    font-size: 0.98rem;
+  }
+}
 
 /* about page flexible */
 .profile-columns {

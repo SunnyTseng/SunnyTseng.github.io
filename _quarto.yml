@@ -1,7 +1,6 @@
 project:
   type: website
 
-
 website:
   title: "曾奕晴 Sunny Tseng"
   
@@ -24,6 +23,7 @@ website:
           text: Service
         - href: consulting/portfolio.qmd
           text: Portfolio
+
         
       - text: Science
         menu: 
@@ -49,6 +49,7 @@ website:
           
         - href: art/fine_art.qmd
           text: Fine Art
+
         
       - text: Sound
         menu:
@@ -57,9 +58,14 @@ website:
           
         - href: sound/bird.qmd
           text: Bird Recording
+          
+        - href: sound/collaboration.qmd
+          text: Collaborations
+
       
       - href: blog.qmd
         text: Blog
+
       
       - href: about.qmd
         text: About
