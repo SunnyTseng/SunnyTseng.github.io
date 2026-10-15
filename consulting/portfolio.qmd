@@ -17,30 +17,17 @@ A selection of past projects showcasing my work in data pipelines, R package dev
 #| message: false
 #| warning: false
 
-library(readr)
-library(dplyr)
-library(knitr)
+#| echo: false
+#| message: false
+#| warning: false
 
-pipeline <- read_csv("portfolio_pipeline.csv", show_col_types = FALSE)
+load("portfolio_pipeline.rda")
+source("portfolio_functions.r")
 
-pipeline %>%
-  arrange(desc(start_date)) %>%
-  mutate(start_date_parsed = as.Date(paste0(start_date, "-01")),
-         start_fmt = format(start_date_parsed, "%b %Y"),
-         
-         end_date_str = ifelse(is.na(end_date), NA_character_, paste0(end_date, "-01")),
-         end_date_parsed = as.Date(end_date_str),
-         end_fmt = format(end_date_parsed, "%b %Y"),
-         
-         Date = if_else(!is.na(end_date_parsed), 
-                        paste0(start_fmt, " – ", end_fmt), 
-                        paste0(start_fmt, " - Present")),
-         
-         Details = paste0("**", title, "** <br> ", host, " - ", institution, " <br> ", location)) %>%
-  
-  select(Date, Details) %>%
-  kable(escape = FALSE, 
-        col.names = c("", ""))
+portfolio_pipeline |> 
+  filter(type == "data_pipeline") |>
+  format_portfolio() |> 
+  fmt_gt()
 ```
 
 
