@@ -104,6 +104,36 @@ projects <- tribble(
   
   
   ## Workshops here
+  "2026-11", 
+  NA,        
+  "XXIX International Ornithological Congress", 
+  "Yucatán International Congress Center",  
+  "Merida, Mexico", 
+  "BirdNET in R",                          
+  "Instructor",                     
+  "workshop_bioacoustics",
+  
+  
+  "2026-10", 
+  NA,        
+  "Jasmine", 
+  "R Ladies Vancouver",  
+  "Vancouver, BC, Canada", 
+  "Rainy day bioacoustics: listening to birds with R",                          
+  "Instructor",                     
+  "workshop_bioacoustics",
+  
+  
+  "2026-10", 
+  NA,        
+  "Data4Nature", 
+  "UBC",  
+  "Vancouver, BC, Canada", 
+  "Species identification through computer vision",                             
+  "Co-instructor with Cara Appel",                     
+  "workshop_bioacoustics",
+  
+  
   "2026-02", 
   NA,        
   "Library Graduate Student Workshop Development Program", 
@@ -164,7 +194,7 @@ projects <- tribble(
   "Luna Fan",                                              
   "ESRI",  
   "Jiji, Nantou, Taiwan", 
-  "Recording Techniques for Breeding Bird Surveys (6 sessions)", 
+  "Recording techniques for breeding bird surveys (6 sessions)", 
   "Instructor",                  
   "workshop_bioacoustics",
   

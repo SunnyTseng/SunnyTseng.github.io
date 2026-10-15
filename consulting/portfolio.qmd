@@ -34,13 +34,40 @@ portfolio_projects |>
 
 ## R package development 📦
 
+## R package development 📦
+
+:::: {.columns}
+
+::: {.column width="82%"}
+**birdnetTools** (2025 – present) - **Creator / Maintainer** - R package for post-processing, visualization, and validation of BirdNET output. Developed in collaboration with the BirdNET team. Available on GitHub. ([Documentation](https://birdnet-team.github.io/birdnetTools/))
+:::
+
+::: {.column width="18%"}
+![](images/birdnetTools_hex.png){fig-alt="birdnetTools hex logo" width="110px"}
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width="82%"}
+**bbsTaiwan** (2024 – present) - **Creator / Maintainer** - R package for accessing and analyzing Taiwan Breeding Bird Survey (BBS) data. Developed for national biodiversity research and public engagement. Available on GitHub. ([Documentation](https://sunnytseng.github.io/bbsTaiwan/))
+:::
+
+::: {.column width="18%"}
+![](images/bbsTaiwan_hex.png){fig-alt="bbsTaiwan hex logo" width="110px"}
+:::
+
+::::
+
+
 -   **birdnetTools** (2025 - present) - **Creater / Maintainer** - R package for post-processing, visualizatino, and validation of BirdNET output. Developed in collaboration with the BirdNET team. Available on GitHub. ([Documentation](https://birdnet-team.github.io/birdnetTools/))
 
 -   **bbsTaiwan** (2024 - present) - **Creater / Maintainer** - R package for accessing and analyzing Taiwan Breeding Bird Survey (BBS) data. Developed for national biodiversity research and public engagement. Available on GitHub. ([Documentation](https://sunnytseng.github.io/bbsTaiwan/))
 
 
 
-## Workshop & tutorial 🏫
+## Bioacoustics workshops 🏫
 
 ```{r}
 #| echo: false
@@ -51,7 +78,24 @@ load("portfolio_projects.rda")
 source("portfolio_functions.r")
 
 portfolio_projects |>
-  filter(type %in% c("workshop_data_science", "workshop_bioacoustics")) |>
+  filter(type == "workshop_bioacoustics") |>
+  format_workshops() |>
+  fmt_gt()
+```
+
+
+## Data science workshops 🏫
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+load("portfolio_projects.rda")
+source("portfolio_functions.r")
+
+portfolio_projects |>
+  filter(type == "workshop_data_science") |>
   format_workshops() |>
   fmt_gt()
 ```
