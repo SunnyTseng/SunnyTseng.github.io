@@ -21,70 +21,171 @@ library(tibble)
 # ---- Institution lookup (type the short code, get the full name) ----
 institutions <- tribble(
   ~short,     ~long,
-  "ECCC",     "Environment and Climate Change Canada",
-  "NPUST",    "National Pingtung University of Science and Technology",
+  
+  "ECCC", "Environment and Climate Change Canada",
+  "CWS", "Canadian Wildlife Service",
+  "ESRI", "Endemic Species Research Institute",
+  
   "BirdsCan", "Birds Canada",
-  "ESRI",     "Endemic Species Research Institute"
+  
+  "NPUST", "National Pingtung University of Science and Technology",
+  "UNBC", "University of Northern British Columbia",
+  "UBC", "University of British Columbia",
+  "USask", "University of Saskatchewan"
 )
 
 # ---- Projects ----
-# type: "ARU & acoustics" | "Field survey & analysis" | "Data digitization"
 projects <- tribble(
   ~start_date, 
   ~end_date, 
   ~host,           
-  ~inst,      
+  ~inst, 
+  ~location,
   ~title,
-  ~location,                   
+  ~role,
   ~type,
+  
+  ## Data pipelines here
   
   "2026-09",   
   NA,        
   "Barbara Frei",  
-  "ECCC",     
+  "ECCC",
+  "Montreal, Quebec, Canada",
   "Species-specific threshold for Montreal urban bird ARU monitoring",
-  "Montreal, Quebec, Canada",              
+  "Data Analyst",
   "data_pipeline",
+  
   
   "2026-09",   
   NA,        
   "Shiao-Yu Hong", 
-  "NPUST",    
-  "Individual identification of Eastern Grass Owl with BirdNET embedding",  
-  "Neipu, Pingtung, Taiwan",  
+  "NPUST",
+  "Neipu, Pingtung, Taiwan",
+  "Individual identification of Eastern Grass Owl with BirdNET embedding",
+  "Data Analyst",
   "data_pipeline",
   
   "2024-09",   
   "2025-03", 
   "David Bradley", 
-  "BirdsCan", 
+  "BirdsCan",
+  "Delta, BC, Canada",
   "Process BC & Maritime provinces ARU data through BirdNET",
-  "Delta, BC, Canada",                
+  "Data Analyst",
   "data_pipeline",
   
   "2023-09",   
   "2024-03", 
   "David Bradley", 
   "BirdsCan", 
+  "Delta, BC, Canada",
   "Process BC ARU data through BirdNET",
-  "Delta, BC, Canada",                
+  "Data Analyst",
   "data_pipeline",
   
   "2020-04",   
   "2021-07", 
   "Jerome Ko",     
   "ESRI",     
-  "Field bird survey & eBird citizen science data analysis",  
-  "Jiji, Nantou, Taiwan",     
+  "Jiji, Nantou, Taiwan",
+  "Field bird survey & eBird citizen science data analysis", 
+  "Data Analyst",
   "data_pipeline",
   
   "2020-02",   
   "2020-03", 
   "David Bradley", 
   "BirdsCan", 
-  "Digitalize historical BC bird survey data",  
-  "Ladner, BC, Canada",                
-  "data_pipeline"
+  "Ladner, BC, Canada",
+  "Digitalize historical BC bird survey data",
+  "Data Analyst",
+  "data_pipeline",
+  
+  
+  ## Workshops here
+  "2026-02", 
+  NA,        
+  "Library Graduate Student Workshop Development Program", 
+  "UNBC",  
+  "Virtual", 
+  "Introduction to Git & GitHub",                              
+  "Instructor",                     
+  "workshop_data_science",
+  
+  
+  "2025-08", 
+  NA,        
+  "SCO-SOC annual conference",                             
+  "USask", 
+  "Saskatoon, SK, Canada", 
+  "BirdNET workshop",                                         
+  "Co-instructor with Jenn Foote",  
+  "workshop_bioacoustics",
+  
+  "2023-03", 
+  NA,        
+  "Jennifer Wigglesworth",                                 
+  "UNBC",  
+  "Virtual", 
+  "Qualitative Analysis using R",                             
+  "Instructor",                     
+  "workshop_data_science",
+  
+  "2022-11", 
+  NA,        
+  "Applied Analysis Hub",                                  
+  "UNBC",  
+  "Virtual", 
+  "Introduction to Git and GitHub",                           
+  "Instructor",                     
+  "workshop_data_science",
+  
+  "2022-03", 
+  NA,        
+  "Applied Analysis Hub",                                  
+  "UNBC",  
+  "Virtual", 
+  "Data Wrangling with R",                                    
+  "Instructor",                     
+  "workshop_data_science",
+  
+  "2021-05", 
+  "2021-07", 
+  "Jerome Ko",                                             
+  "ESRI",  
+  "Jiji, Nantou, Taiwan", 
+  "Data Wrangling with R (4 sessions)",                       
+  "Instructor",                     
+  "workshop_data_science",
+  
+  "2020-12", 
+  "2021-03", 
+  "Luna Fan",                                              
+  "ESRI",  
+  "Jiji, Nantou, Taiwan", 
+  "Recording Techniques for Breeding Bird Surveys (6 sessions)", 
+  "Instructor",                  
+  "workshop_bioacoustics",
+  
+  "2018-10", 
+  NA,        
+  "Kathy Martin",                                          
+  "CWS",   
+  "Delta, BC, Canada", 
+  "Automatic bird sound detection: ARU data analysis",        
+  "Instructor",                     
+  "workshop_bioacoustics",
+  
+  "2018-01", 
+  "2018-04", 
+  "Trevor Gareth Jones",                                   
+  "UBC",   
+  "Vancouver, BC, Canada", 
+  "Statistical Analysis in Ecology (5 sessions)",             
+  "Instructor",                     
+  "workshop_data_science"
+  
 )
 
 # ---- Build the final table ----

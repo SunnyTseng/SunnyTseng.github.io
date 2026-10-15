@@ -10,7 +10,9 @@ parse_ym <- function(x) {
   as.Date(if_else(is.na(x), NA_character_, paste0(x, "-01")))
 }
 
-# Add the display columns `Date` and `Details`, newest first
+
+
+# formatting function for data pipeline -----------------------------------
 format_portfolio <- function(d) {
   d |>
     arrange(desc(start_date)) |>
@@ -27,6 +29,27 @@ format_portfolio <- function(d) {
     ) |>
     select(Date, Details)
 }
+
+
+
+# formatting function for workshop ----------------------------------------
+
+format_workshops <- function(d) {
+  d |>
+    arrange(desc(start_date)) |>
+    mutate(
+      start_fmt = format(parse_ym(start_date), "%b %Y"),
+      end_fmt   = format(parse_ym(end_date), "%b %Y"),
+      Date = if_else(!is.na(end_date),
+                     paste0(start_fmt, " \u2013 ", end_fmt),
+                     start_fmt),
+      # "  \n" = markdown hard line break
+      Details = paste0("**", title, "** (", role, ")  \n",
+                       host, " (", institution, ")")
+    ) |>
+    select(Date, Details)
+}
+
 
 # Shared table look: no header row, full width, narrow date column
 fmt_gt <- function(d) {

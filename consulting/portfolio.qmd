@@ -47,25 +47,13 @@ portfolio_pipeline |>
 #| message: false
 #| warning: false
 
-library(readr)
-library(dplyr)
-library(knitr)
+load("portfolio_pipeline.rda")
+source("portfolio_functions.r")
 
-workshops <- read_csv("portfolio_workshop.csv", show_col_types = FALSE)
-
-workshops %>%
-  arrange(desc(date)) %>%
-  mutate(
-    start_date_parsed = as.Date(paste0(date, "-01")),
-    end_date_str = ifelse(is.na(end_date), NA_character_, paste0(end_date, "-01")),
-    end_date_parsed = as.Date(end_date_str),
-    start_fmt = format(start_date_parsed, "%b %Y"),
-    end_fmt = format(end_date_parsed, "%b %Y"),
-    Date = if_else(!is.na(end_date_parsed), paste0(start_fmt, " – ", end_fmt), start_fmt),
-    Details = paste0("**", title, "** (", role, ") <br> ", host, " (", institution, ")")) %>%
-  select(Date, Details) %>%
-  kable(escape = FALSE, 
-        col.names = c("", ""))
+portfolio_pipeline |>
+  filter(type %in% c("workshop_data_science", "workshop_bioacoustics")) |>
+  format_workshops() |>
+  fmt_gt()
 ```
 
 
