@@ -34,8 +34,6 @@ portfolio_projects |>
 
 ## R package development 📦
 
-## R package development 📦
-
 :::: {.columns}
 
 ::: {.column width="82%"}
@@ -43,7 +41,7 @@ portfolio_projects |>
 :::
 
 ::: {.column width="18%"}
-![](images/birdnetTools_hex.png){fig-alt="birdnetTools hex logo" width="110px"}
+![](packages_logo/birdnetTools.png){fig-alt="birdnetTools hex logo" height="110px"}
 :::
 
 ::::
@@ -55,15 +53,10 @@ portfolio_projects |>
 :::
 
 ::: {.column width="18%"}
-![](images/bbsTaiwan_hex.png){fig-alt="bbsTaiwan hex logo" width="110px"}
+![](packages_logo/bbsTaiwan.png){fig-alt="bbsTaiwan hex logo" height="110px"}
 :::
 
 ::::
-
-
--   **birdnetTools** (2025 - present) - **Creater / Maintainer** - R package for post-processing, visualizatino, and validation of BirdNET output. Developed in collaboration with the BirdNET team. Available on GitHub. ([Documentation](https://birdnet-team.github.io/birdnetTools/))
-
--   **bbsTaiwan** (2024 - present) - **Creater / Maintainer** - R package for accessing and analyzing Taiwan Breeding Bird Survey (BBS) data. Developed for national biodiversity research and public engagement. Available on GitHub. ([Documentation](https://sunnytseng.github.io/bbsTaiwan/))
 
 
 
