@@ -59,7 +59,7 @@ fmt_gt <- function(d) {
     cols_align(align = "left") |>
     tab_options(column_labels.hidden = TRUE,
                 table.width = "100%",
-                table.font.size = pct(80),
+                table.font.size = pct(90),
                 data_row.padding = px(6)) |>      # tighter rows
     cols_width(1 ~ "20%")
 }

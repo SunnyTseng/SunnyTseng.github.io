@@ -21,10 +21,10 @@ A selection of past projects showcasing my work in data pipelines, R package dev
 #| message: false
 #| warning: false
 
-load("portfolio_pipeline.rda")
+load("portfolio_projects.rda")
 source("portfolio_functions.r")
 
-portfolio_pipeline |> 
+portfolio_projects |> 
   filter(type == "data_pipeline") |>
   format_portfolio() |> 
   fmt_gt()
@@ -47,10 +47,10 @@ portfolio_pipeline |>
 #| message: false
 #| warning: false
 
-load("portfolio_pipeline.rda")
+load("portfolio_projects.rda")
 source("portfolio_functions.r")
 
-portfolio_pipeline |>
+portfolio_projects |>
   filter(type %in% c("workshop_data_science", "workshop_bioacoustics")) |>
   format_workshops() |>
   fmt_gt()

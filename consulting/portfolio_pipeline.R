@@ -189,14 +189,14 @@ projects <- tribble(
 )
 
 # ---- Build the final table ----
-portfolio_pipeline <- projects |>
+portfolio_projects <- projects |>
   mutate(end_date = as.character(end_date)) |>
   left_join(institutions, by = c("inst" = "short")) |>
   mutate(institution = coalesce(long, inst)) |>   
   select(-long, -inst)
 
 # ---- Save as .rda ----
-save(portfolio_pipeline,
-     file = "consulting/portfolio_pipeline.rda")
+save(portfolio_projects,
+     file = "consulting/portfolio_projects.rda")
 
 
