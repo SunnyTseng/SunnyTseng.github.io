@@ -24,9 +24,10 @@ toc: false
 
 ::: {.g-col-12 .g-col-md-8}
 
-<span style="font-size: 1.5em;">**Sunny Tseng, PhD**</span>
 
-**Hello! This is Sunny, an independent ecological consultant based in Vancouver, Canada**.
+## Sunny Tseng, PhD
+
+**Hello! This is Sunny, an independent ecological data consultant from Taiwan, now based in Vancouver, Canada.**
 
 This website serves as a central space for my work and personal passions, from data consulting and research to arts, sound recording, and creative writing. Each aspect reflects a unique part of who I am. You'll find content in both English and Traditional Chinese, a blend that reflects my own multicultural background and identity. To learn more about me, feel free to visit the About page!
 
@@ -34,7 +35,7 @@ This website serves as a central space for my work and personal passions, from d
 哈囉，我是奕晴，來自於一個美麗的熱帶小島 - 臺灣。目前定居於加拿大溫哥華，另一個靠海的美麗地方。覺得自己很難用單一身分來定義，因此建立了個人網站來整理自己的生活、讓多樣的面相可以有多樣的呈現。在這裡你可以看到我在加拿大擔任的資料生態顧問的創業（Consulting）、自然科學研究（Science）、藝術創作（Art）、野外錄音（Sound）、還有我的部落格（Blog）。如果想認識更多關於我的故事，也可以到關於我（About）頁面逛逛。
 
 
-### Media & Interviews
+### Media and interview
 
 - **[From BirdNET Detections to Ecological Insight: Sunny Tseng on birdnetTools 2.0](https://r-consortium.org/posts/from-birdnet-detections-to-ecological-insight-sunny-tseng-on-birdnettools-2-0/)** — R Consortium Written Interview. Sep 2026.
 
