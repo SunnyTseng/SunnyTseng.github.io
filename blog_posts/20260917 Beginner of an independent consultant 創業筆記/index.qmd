@@ -69,5 +69,11 @@ Business 的帳戶有個基本存款，這個帳戶的收入是客戶的匯款�
 
 我是一個有甚麼成就都很喜歡分享的人，PhD 的時候還有 lab colleague，只要是跟 wildlife 有關的成就都可以分享，但自己創業之後，因為是獨立工作，所以好像除了虛擬世界以外就沒有真實的人可以說，覺得這對我來說很困難!
 
+## Tax-related 
+
+- When to register for a BN: https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/business-registration/business-number-program-account/need-bn.html
+
+- When to register and charge for GST/HST:
+https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html
 
 
