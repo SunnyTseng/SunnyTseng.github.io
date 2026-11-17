@@ -29,6 +29,8 @@ toc: false
 
 **Hello! This is Sunny, an independent ecological data consultant from Taiwan, now based in Vancouver, Canada.**
 
+> I earned my PhD in the spring of 2026 and am currently leading international projects, including an acoustic monitoring study in Lithuania (supported by National Geographics, Wildlife Acoustics), and working as a software developer with the BirdNET Team at the Cornell Lab of Ornithology (supported by NSERC, R Consortium), all while launching my business as an independent consultant!
+
 This website serves as a central space for my work and personal passions, from data consulting and research to arts, sound recording, and creative writing. Each aspect reflects a unique part of who I am. You'll find content in both English and Traditional Chinese, a blend that reflects my own multicultural background and identity. To learn more about me, feel free to visit the About page!
 
 
