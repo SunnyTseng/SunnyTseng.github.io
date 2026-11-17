@@ -22,7 +22,7 @@ toc: false
 
 ::::: {.columns .profile-columns}
 ::: {.column width="65%"}
--   **Email:** [sunnyyctseng\@gmail.com](mailto:sunnyyctseng@gmail.com)
+-   **Email:** [sunny\@sunnytseng.ca](mailto:sunny@sunnytseng.ca)
 -   **GitHub:** [github.com/SunnyTseng](https://github.com/SunnyTseng)
 -   **Google Scholar:** [Sunny Tseng](https://scholar.google.com/citations?user=_bHf5NgAAAAJ)
 -   **LinkedIn:** [linkedin.com/in/sunnytseng](https://www.linkedin.com/in/sunnytseng/)
