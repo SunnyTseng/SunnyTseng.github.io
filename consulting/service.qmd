@@ -11,6 +11,16 @@ title-block-banner: ../images/cover_consulting.JPG
 I provide services broadly in data science, R programming, and ecological data analysis. If you're interested in any of these, please feel free to [contact me](../about.qmd).
 
 
+## Bioacoustics data analysis 🐦
+
+I specialize in bioacoustics data analysis, particularly for datasets collected with autonomous recording units (ARUs). I can help take your workflow from raw audio files to clean detection tables, set up structured detection validation, and prepare your data for downstream analyses—such as acoustic embedding analysis or occupancy modelling—tailored to your research questions.
+
+
+## Bioacoustics & data science workshops 🏫
+
+I offer hands-on bioacoustics workshops tailored for ecologists, covering audio data processing in R as well as running and validating BirdNET workflows (both in R and via the GUI). I also lead general data science workshops on data wrangling with `tidyverse`, data visualization with `ggplot2`, ecological modelling in R, data management, Git & GitHub, reproducible coding, and R package development.
+
+
 ## Data pipelines & management 🎓
 
 I specialize in preparing and streamlining data pipelines for complex, large-scale datasets, especially ecological data such as audio, video, and imagery. My services include data cleaning, wrangling, automated analysis, and advanced ecological modelling — components that can be part of a scientific manuscript. I also help put organizational datasets in order and set up GitHub organization pages, so your team can manage and share data long after the project ends.
@@ -24,21 +34,6 @@ Building R packages is one of the best ways to make code accessible and reusable
 ## Shiny tools, quarto & R markdown 📊
 
 R Markdown and Quarto are powerful tools for turning data into clear, well-organized reports, while Shiny tools and Quarto dashboards make that data interactive — letting stakeholders explore and engage with results directly. I build documentation, dashboards, and interactive Shiny tools to help your team communicate data more clearly and make it easier for others to engage with. BTW, this website was created by Quarto!
-
-
-## Workshop & tutorial 🏫
-
-I take pride in teaching — it's a valuable opportunity to share knowledge and help make data science and R programming more accessible to researchers and students. I offer workshops on data wrangling with tidyverse, data visualization with ggplot2, and ecological modelling in R, as well as topics like data management, Git & GitHub, reproducible coding, and R package development.
-
-
-## Code review & troubleshooting 💬
-
-Already comfortable in R but stuck on a specific bug, workflow decision, or analysis approach? I offer one-on-one sessions to review code, troubleshoot problems, and help you get unstuck — a lower-commitment option for when you don't need a full project, just a second pair of eyes.
-
----
-
-Looking for something different? I also take on [scientific illustration](../art/design.qmd) projects — graphical abstracts, infographics, and custom visual assets for research communication. [Check it out](../art/design.qmd)!
-
 
 
 
