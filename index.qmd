@@ -17,7 +17,7 @@ toc: false
 
 ::: {.g-col-12 .g-col-md-4}
 ::: {.profile-photo}
-![](images/profile.jpg)
+![](images/profile_front_edited.jpg)
 
 :::
 :::

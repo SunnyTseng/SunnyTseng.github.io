@@ -21,20 +21,20 @@ toc: false
 ## Sunny Tseng, PhD
 
 ::::: {.columns .profile-columns}
-::: {.column width="65%"}
+::: {.column width="45%"}
 -   **Email:** [sunny\@sunnytseng.ca](mailto:sunny@sunnytseng.ca)
 -   **GitHub:** [github.com/SunnyTseng](https://github.com/SunnyTseng)
 -   **Google Scholar:** [Sunny Tseng](https://scholar.google.com/citations?user=_bHf5NgAAAAJ)
 -   **LinkedIn:** [linkedin.com/in/sunnytseng](https://www.linkedin.com/in/sunnytseng/)
 
-> I specialize in bioacoustics, ornithology, and data science, and I earned my PhD in spring 2026. I am currently leading international projects, including an acoustic monitoring study in Lithuania (supported by National Geographics, Wildlife Acoustics), and working as a software developer with the BirdNET Team at the Cornell Lab of Ornithology (supported by NSERC, R Consortium), all while launching my business as an independent consultant!
 :::
 
-::: {.column width="35%"}
-![](images/profile.JPG){.rounded width="100%"}
+::: {.column width="55%"}
+![](images/profile_back.JPG){.rounded width="100%"}
 :::
 :::::
 
+> I specialize in bioacoustics, ornithology, and data science, and I earned my PhD in spring 2026. I am currently leading international projects, including an acoustic monitoring study in Lithuania (supported by National Geographics, Wildlife Acoustics), and working as a software developer with the BirdNET Team at the Cornell Lab of Ornithology (supported by NSERC, R Consortium), all while launching my business as an independent consultant!
 
 ## About me 關於我
 
